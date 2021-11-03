@@ -1,0 +1,55 @@
+.scout {
+   height: 467px;
+   position: relative;
+   background-image: url(/img/sb.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   .scout-inner {
+      
+      
+   }
+   ul {
+      padding-top: 30px;
+   }
+   li {
+      
+      
+      margin-bottom: 30px;
+      list-style: none; 
+      
+      p {
+         
+         display: inline;
+         margin: 0;
+         margin-left: 35px;
+         font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+/* identical to box height, or 142% */
+
+align-items: center;
+letter-spacing: 0.09em;
+
+color: #FFFFFF;
+      }
+     }
+     li {
+        p:hover{
+        color:#ccffcc;
+        }
+        
+     }
+.compas {
+   position: absolute;
+   top:-29%;
+   left:40%;
+      width: 701px;
+      height: 718px;
+      img {
+         width: 100%;
+         height: auto;
+      }
+ }
+
+}

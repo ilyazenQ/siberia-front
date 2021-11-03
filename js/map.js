@@ -1,0 +1,1 @@
+"use strict";let test=document.getElementById("test");test.addEventListener("click",(t=>{document.querySelector(".accordion-button").click(),document.querySelector(".accordion-button").focus()}));

@@ -1,0 +1,102 @@
+header {
+   position: relative;
+   z-index: 5;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: normal;
+   color: #FFFFFF;
+   .header__upper-nav{
+      border-bottom: 0.3px solid rgba(97, 255, 255, 0.42);
+      height: 40px;
+      
+   }
+   .upper-nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+      .phone-block{
+         width: 187px;
+         height: 40px;
+         background: rgba(17, 194, 173, 0.38);
+         text-align: center;
+         display: flex;
+         align-items: center;
+         border-radius: 3px;
+         p{
+            margin: 0 auto;
+            a{
+               color:#FFFFFF;
+               text-decoration: none;
+            }
+            
+         }
+      }
+      .social-block {
+         .social-link{
+            margin-left: 30px;
+         }
+      }
+      .lang-block {
+         margin-left: 30px;
+         a{
+            color:#FFFFFF;
+            text-decoration: none;
+         }
+      }
+   }
+   .down-nav {
+      
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      position: relative;
+      .title-logo {
+         position: absolute;
+         top:-35%;
+         left: 3%;
+      }
+      .title-text {
+         margin-top: 40px;
+         margin-left: 150px;
+         font-family: Yrsa;
+         font-style: normal;
+         align-items: center;
+         text-align: center;
+         .title-text__upper{
+            letter-spacing: 0.195em;
+text-transform: uppercase;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 40px;
+         }
+         .title-text__down{
+            letter-spacing: 0.21em;
+text-transform: uppercase;
+font-weight: 300;
+font-size: 16px;
+line-height: 40px;
+         }
+      }
+      .down-nav__block-button {
+         margin-top: -30px;
+      }
+      .btn-req {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0.065em;
+      color: #FFFFFF;
+      }
+      .btn-canv {
+         margin-left: 50px;
+      }
+
+   }
+
+   
+   
+
+}

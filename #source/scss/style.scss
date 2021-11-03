@@ -1,0 +1,21 @@
+@import "video";
+@import "header";
+@import "map-block";
+@import "calendar";
+@import "scout";
+@import "blog-section";
+
+body {
+  background: linear-gradient(180deg, #02201C 23.22%, #06443D 39.22%, rgba(9, 102, 91, 0.893633) 51.7%, #11C2AD 86.82%);
+}
+.my-btn {
+   padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.my-link {
+  text-decoration:none;
+}

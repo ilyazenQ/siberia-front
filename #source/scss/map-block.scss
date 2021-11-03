@@ -1,0 +1,114 @@
+#test {
+   z-index: 4;
+}
+.map-block {
+   z-index: 10;
+   .search-input {
+      border:none;
+      margin-bottom: 15px;
+     padding-left: 30px;
+    
+      font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 40px;
+letter-spacing: 0.055em;
+text-align: left;
+color: white;
+      width: 257px;
+      height: 26px;
+      background: rgba(17, 194, 173, 0.53);
+      background-image: url('/img/icons/se.png');
+      background-repeat: no-repeat;
+      background-position-x: 3%;
+      background-position-y: 50%;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 3px;
+   }
+   input::placeholder {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 40px;
+      letter-spacing: 0.055em;
+      text-align: left;
+      color: white;
+    }
+    
+   .accordion {
+      background: rgba(161, 172, 172, 0.22);
+      padding-left: 18px;
+   border-radius: 5px;
+      border: none;
+      .accordion-item{
+         border: none;
+         
+      }
+      .accordion-body {
+         margin: 0;
+         padding: 0;
+      }
+   .accordion-button{
+      margin: 0;
+   padding: 0;
+      background-color: transparent;
+   border: none;
+   font-family: Yrsa;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 40px;
+color:white;
+align-items: center;
+letter-spacing: -0.015em;
+text-transform: uppercase;
+   }
+   .accordion-button:not(.collapsed) {
+      
+      background-color: none;
+      box-shadow: none;
+  }
+  .accordion-button:focus{
+   z-index: 5;
+   border-color: none;
+   text-decoration: underline;
+   box-shadow: none;
+   color: #11C2AD;
+  }
+  .accordion-button:hover{
+   z-index: 5;
+   text-decoration: underline;
+   color: #11C2AD;
+  }
+  
+  .accordion-button::after {
+display: none;
+}
+.accordion-list{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   .accordion-item {
+      a {
+         text-decoration: none;
+      font-family: Yrsa;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+margin-left: 30px;
+   padding: 0;
+
+letter-spacing: 0.21em;
+text-transform: uppercase;
+
+color: #11C2AD;
+      }
+      a:hover {
+         color:white;
+      }
+   }
+}
+}
+}
