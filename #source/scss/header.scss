@@ -54,8 +54,9 @@ header {
       justify-content: space-between;
       position: relative;
       .title-logo {
+         z-index: 10;
          position: absolute;
-         top:-35%;
+         top:-40%;
          left: 3%;
       }
       .title-text {

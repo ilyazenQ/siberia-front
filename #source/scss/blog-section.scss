@@ -1,8 +1,11 @@
 .blog-section{
    padding-top: 60px;
+   position: relative;
+   z-index: 10;
    .blog-inner{
       display: flex;
       justify-content: space-between;
+      margin-top: -20px;
       .add-card-wrap {
          width: 30%; 
          a:hover{
