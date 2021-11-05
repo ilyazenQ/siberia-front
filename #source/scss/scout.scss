@@ -1,18 +1,24 @@
 .scout {
+   
    height: 467px;
-   position: relative;
+   
    background-image: url(/img/sb.png);
    background-repeat: no-repeat;
    background-size: cover;
+   width: 100%;
    
-   
+   .scout-body {
+      display: flex;
+      position: relative;
+   }
    
    .scout-inner {
       
       
    }
    ul {
-      padding-top: 30px;
+      padding: 0;
+      padding-top: 25px;
    }
    li {
       
@@ -24,15 +30,15 @@
          
          display: inline;
          margin: 0;
-         margin-left: 35px;
+         margin-left: 25px;
          font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
-font-size: 24px;
+font-size: 22px;
 /* identical to box height, or 142% */
 
 align-items: center;
-letter-spacing: 0.09em;
+letter-spacing: 0.15em;
 
 color: #FFFFFF;
       }

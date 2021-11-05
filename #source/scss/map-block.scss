@@ -2,11 +2,15 @@
    z-index: 4;
 }
 .map-block {
+   position: relative;
+   display: flex;
+   flex-wrap: nowrap;
+   margin-top: 30px;
    z-index: 10;
    .search-input {
       border:none;
       margin-bottom: 15px;
-     padding-left: 30px;
+     padding-left: 40px;
     
       font-family: Montserrat;
 font-size: 12px;
@@ -21,7 +25,7 @@ color: white;
       background: rgba(17, 194, 173, 0.53);
       background-image: url('/img/icons/se.png');
       background-repeat: no-repeat;
-      background-position-x: 3%;
+      background-position-x: 6%;
       background-position-y: 50%;
       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 3px;
@@ -38,11 +42,15 @@ color: white;
     }
     
    .accordion {
+      position: relative;
+      z-index: 2;
       background: rgba(161, 172, 172, 0.22);
+      margin-left: -18px;
       padding-left: 18px;
    border-radius: 5px;
       border: none;
       .accordion-item{
+         margin-bottom: 10px;
          border: none;
          
       }
@@ -55,7 +63,7 @@ color: white;
    padding: 0;
       background-color: transparent;
    border: none;
-   font-family: Yrsa;
+   font-family: 'Yrsa',sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 28px;
@@ -93,7 +101,7 @@ display: none;
    .accordion-item {
       a {
          text-decoration: none;
-      font-family: Yrsa;
+         font-family: 'Yrsa',sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
@@ -111,4 +119,38 @@ color: #11C2AD;
    }
 }
 }
+}
+.map-block__map {
+   z-index: 1;
+   
+  
+   height: 1600px;
+   .main-map {
+      @font-face { font-family:"Book Antiqua";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .str4 {stroke:#888888;stroke-width:77.1;stroke-miterlimit:22.9256}
+    .str1 {stroke:#99FFFF;stroke-width:77.1;stroke-miterlimit:22.9256}
+    .str0 {stroke:#E6E6E6;stroke-width:77.1;stroke-miterlimit:22.9256}
+    .str2 {stroke:#E6E6E6;stroke-width:77.1;stroke-miterlimit:22.9256}
+    .str3 {stroke:#99FFFF;stroke-width:171.4;stroke-miterlimit:22.9256}
+    .str6 {stroke:aqua;stroke-width:226.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str5 {stroke:#99FFFF;stroke-width:226.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:none;fill-rule:nonzero}
+    .fil3 {fill:aqua}
+    .fil2 {fill:aqua;fill-rule:nonzero}
+    .fnt1 {font-weight:bold;font-size:2419px;font-family:'Book Antiqua'}
+    .fnt2 {font-weight:bold;font-size:2721.4px;font-family:'Book Antiqua'}
+    .fnt0 {font-weight:bold;font-size:3023.8px;font-family:'Book Antiqua'}
+      
+    
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top:-30%;
+    left: -10%;
+    //right: -46em;
+    
+    
+  
+   }
 }

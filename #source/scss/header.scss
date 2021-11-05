@@ -56,13 +56,13 @@ header {
       .title-logo {
          z-index: 10;
          position: absolute;
-         top:-40%;
-         left: 3%;
+         top:-45%;
+         left: 1%;
       }
       .title-text {
          margin-top: 40px;
-         margin-left: 150px;
-         font-family: Yrsa;
+         margin-left: 105px;
+         font-family: 'Yrsa',sans-serif;
          font-style: normal;
          align-items: center;
          text-align: center;
@@ -70,14 +70,14 @@ header {
             letter-spacing: 0.195em;
 text-transform: uppercase;
             font-weight: 500;
-            font-size: 64px;
-            line-height: 40px;
+            font-size: 60px;
+            line-height: 30px;
          }
          .title-text__down{
-            letter-spacing: 0.21em;
+            letter-spacing: 0.3em;
 text-transform: uppercase;
 font-weight: 300;
-font-size: 16px;
+font-size: 15px;
 line-height: 40px;
          }
       }
@@ -85,14 +85,18 @@ line-height: 40px;
          margin-top: -30px;
       }
       .btn-req {
+         width: 165px;
+height: 40px;
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
-      letter-spacing: 0.065em;
+      font-size: 11px;
+      letter-spacing: 0.1em;
       color: #FFFFFF;
+      border: 1px solid #FFFFFF;
       }
       .btn-canv {
-         margin-left: 50px;
+         margin-left: 51px;
       }
 
    }
