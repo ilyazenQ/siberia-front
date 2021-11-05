@@ -10,7 +10,9 @@
 .container {
   max-width: 1146px;
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   background: linear-gradient(180deg, #02201C 22.22%, #06443D 30.22%, rgba(9, 102, 91, 0.893633) 80.7%, #11C2AD 93.82%);
   position: relative;
