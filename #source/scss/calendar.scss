@@ -67,15 +67,35 @@ color: #EEFAF8;
 
    // CARD START
    .calendar-card {
-      
-   width: 29.93%;
+      a {
+         text-decoration: none;
+      }
+   width: 28.93%;
    height: auto;
-   background: #045651;
+   background: rgba(20, 224, 200, 0.2);
+   
    box-shadow: 0px 5px 4px 3px #045651;
    border-radius: 20px;
+   transition: all ease 0.6s;
+
+   &:hover {
+      
+         //transform: scale(1.01);
+         box-shadow: 0px 8px 5px 5px aqua;
+         .calendar-card_img-block {
+            opacity: 1;
+            p { 
+            box-shadow: inset 147px 0 0 0 rgba(17, 194, 173, 1);
+            color: #fff;
+            }
+         }
+       
+      
+   }
+
    }
    .calendar-card-empty {
-      width: 29.93%;
+      width: 28.93%;
    height: auto;
    background: none;
    box-shadow: none;
@@ -134,14 +154,16 @@ border-radius: 5px;
    }
    .calendar-card_img-block {
       width: 98%;
-      height: 265px;
+      height: 250px;
+      opacity: 80%;
+      
       margin: 0 auto;
       background-image: url(/img/ci.png);
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
       position:relative;
-      margin-bottom: 0px;
+      margin-bottom: 6px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
@@ -150,7 +172,9 @@ border-radius: 5px;
      //   width: auto;
      //   padding-bottom: 10px;
     //  }
+    
       p {
+         
          display: block;
          width: 147px;
 height: 30px;
@@ -163,16 +187,11 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 letter-spacing: 0.09em;
-
+transition: all ease 0.8s;
 color: #FFFFFF;
       }
    }
-   .calendar-card_img-block:hover {
-      transform: scale(1.02);
-      p {
-         color:aqua;
-      }
-   }
+ 
    // CARD END
    .row-title-mobail {
       display: none;
@@ -248,14 +267,14 @@ color: #FFFFFF;
       // CARD START
       .calendar-card {
          
-      width: 29.93%;
+      width: 28.93%;
       height: auto;
-      background: #045651;
+      background: rgba(20, 224, 200, 0.2);
       box-shadow: 0px 5px 4px 3px #045651;
       border-radius: 20px;
       }
       .calendar-card-empty {
-         width: 29.93%;
+         width: 28.93%;
       height: auto;
       background: none;
       box-shadow: none;
@@ -347,12 +366,7 @@ color: #FFFFFF;
    color: #FFFFFF;
          }
       }
-      .calendar-card_img-block:hover {
-         transform: scale(1.02);
-         p {
-            color:aqua;
-         }
-      }
+      
       // CARD END
       .row-title-mobail {
          display: none;
@@ -416,14 +430,14 @@ color: #FFFFFF;
       // CARD START
       .calendar-card {
          
-      width: 29.93%;
+      width: 28.93%;
       height: auto;
-      background: #045651;
+      background: rgba(20, 224, 200, 0.2);
       box-shadow: 0px 5px 4px 3px #045651;
       border-radius: 20px;
       }
       .calendar-card-empty {
-         width: 29.93%;
+         width: 28.93%;
       height: auto;
       background: none;
       box-shadow: none;
@@ -515,12 +529,7 @@ color: #FFFFFF;
    color: #FFFFFF;
          }
       }
-      .calendar-card_img-block:hover {
-         transform: scale(1.02);
-         p {
-            color:aqua;
-         }
-      }
+      
       // CARD END
       .row-title-mobail {
          margin: 0px;
@@ -599,14 +608,14 @@ color:white;
          margin: 0 auto;
       width: 95%;
       height: auto;
-      background: #045651;
+      background: rgba(20, 224, 200, 0.2);
       box-shadow: 0px 5px 4px 3px #045651;
       border-radius: 20px;
       margin-bottom: 30px;
       }
       .calendar-card-empty {
          display: none;
-         width: 29.93%;
+         width: 28.93%;
       height: auto;
       background: none;
       box-shadow: none;
@@ -698,12 +707,7 @@ color:white;
    color: #FFFFFF;
          }
       }
-      .calendar-card_img-block:hover {
-         transform: scale(1.02);
-         p {
-            color:aqua;
-         }
-      }
+     
       // CARD END
       .row-title-mobail {
          margin: 0 auto;

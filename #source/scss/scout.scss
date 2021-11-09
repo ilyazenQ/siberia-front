@@ -1,10 +1,11 @@
 .scout-wrapper {
-   position: relative;
+  // position: relative;
+  overflow: hidden;
    
 }
 .scout {
    
-   height: 467px;
+   height: auto;
    
    background-image: url(/img/sb.png);
    background-repeat: no-repeat;
@@ -14,11 +15,12 @@
    
    .scout-body {
       display: flex;
+      justify-content: space-between;
       //position: relative;
    }
    
    .scout-inner {
-      
+      width: 100%;
       
    }
    ul {
@@ -27,7 +29,9 @@
       
    }
    li {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       
       margin-bottom: 30px;
       list-style: none; 
@@ -61,50 +65,46 @@ color: #FFFFFF;
 
 
 }
-@media (max-width: 830px) {  
+@media (max-width: 1001px) {  
 
    .scout {
    
-      height: 467px;
-      
-      background-image: url(/img/sb.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
+     
       
       
       .scout-body {
+         
+      }
+      
+      .scout-inner {
+         width: 100%;
+         
+      }
+      ul {
+         padding: 0;
+         padding-top: 25px;
+         
+      }
+      li {
          display: flex;
-         position: relative;
-      }
-      
-      .scout-inner {
+         align-items: center;
+         justify-content: flex-start;
          
-         
-      }
-      ul {
-         padding: 0;
-         padding-top: 20px;
-         
-      }
-      li {
-         display: block;
-         
-         margin-bottom: 20px;
+         margin-bottom: 30px;
          list-style: none; 
          img {
-            height: 75px;
-            width: 75px;
+            height: 80px;
+            width: 80px;
          }
          p {
             
             display: inline;
             margin: 0;
-            margin-left: 15px;
+            margin-left: 25px;
             font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
-   font-size: 20px;
+   font-size: 18px;
    /* identical to box height, or 142% */
    
    align-items: center;
@@ -125,100 +125,32 @@ color: #FFFFFF;
 
 }
 
-@media (max-width: 611px) {  
+@media (max-width: 851px) {  
 
    .scout {
    
-      height: 467px;
+     
       
-      background-image: url(/img/sb.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
       
-      margin-bottom: 400px;
       .scout-body {
-         display: block;
-         position: relative;
+         
       }
       
       .scout-inner {
-         
+         width: 100%;
          
       }
       ul {
          padding: 0;
-         padding-top: 20px;
+         padding-top: 25px;
          
       }
       li {
-         display: block;
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
          
-         margin-bottom: 20px;
-         list-style: none; 
-         img {
-            height: 75px;
-            width: 75px;
-         }
-         p {
-            
-            display: inline;
-            margin: 0;
-            margin-left: 15px;
-            font-family: Montserrat;
-   font-style: normal;
-   font-weight: 500;
-   font-size: 20px;
-   /* identical to box height, or 142% */
-   
-   align-items: center;
-   letter-spacing: 0.15em;
-   
-   color: #FFFFFF;
-         }
-        }
-        li {
-           p:hover{
-           color:#ccffcc;
-           }
-           
-        }
-   
-   
-   }
-
-}
-
-@media (max-width: 400px) {  
-   
-   .scout {
-   
-      height: 420px;
-      
-      background-image: url(/img/sb.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      
-      margin-bottom: 250px;
-      .scout-body {
-         display: block;
-         position: relative;
-      }
-      
-      .scout-inner {
-         
-         
-      }
-      ul {
-         padding: 0;
-         padding-top: 20px;
-         
-      }
-      li {
-         display: block;
-         
-         margin-bottom: 10px;
+         margin-bottom: 30px;
          list-style: none; 
          img {
             height: 60px;
@@ -228,15 +160,136 @@ color: #FFFFFF;
             
             display: inline;
             margin: 0;
-            margin-left: 15px;
+            margin-left: 25px;
             font-family: Montserrat;
    font-style: normal;
    font-weight: 500;
-   font-size: 15px;
+   font-size: 16px;
    /* identical to box height, or 142% */
    
    align-items: center;
    letter-spacing: 0.15em;
+   
+   color: #FFFFFF;
+         }
+        }
+        li {
+           p:hover{
+           color:#ccffcc;
+           }
+           
+        }
+   
+   
+   }
+
+}
+
+@media (max-width: 751px) {  
+
+   .scout {
+   
+     
+      
+      
+      .scout-body {
+         display: block;
+         
+      }
+      
+      .scout-inner {
+         width: 100%;
+         
+      }
+      ul {
+         padding: 0;
+         padding-top: 25px;
+         
+      }
+      li {
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         
+         margin-bottom: 30px;
+         list-style: none; 
+         img {
+            height: 60px;
+            width: 60px;
+         }
+         p {
+            
+            display: inline;
+            margin: 0;
+            margin-left: 25px;
+            font-family: Montserrat;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   /* identical to box height, or 142% */
+   
+   align-items: center;
+   letter-spacing: 0.15em;
+   
+   color: #FFFFFF;
+         }
+        }
+        li {
+           p:hover{
+           color:#ccffcc;
+           }
+           
+        }
+   
+   
+   }
+
+}
+@media (max-width: 412px) {   
+
+   .scout {
+   
+     
+      
+      
+      .scout-body {
+         display: block;
+         
+      }
+      
+      .scout-inner {
+         width: 100%;
+         
+      }
+      ul {
+         padding: 0;
+         padding-top: 25px;
+         
+      }
+      li {
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         
+         margin-bottom: 30px;
+         list-style: none; 
+         img {
+            height: 50px;
+            width: 50px;
+         }
+         p {
+            
+            display: inline;
+            margin: 0;
+            margin-left: 25px;
+            font-family: Montserrat;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   /* identical to box height, or 142% */
+   
+   align-items: center;
+   letter-spacing: 0.1em;
    
    color: #FFFFFF;
          }

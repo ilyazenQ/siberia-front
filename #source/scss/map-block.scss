@@ -64,13 +64,14 @@ color: white;
       background-color: transparent;
    border: none;
    font-family: 'Yrsa',sans-serif;
+   
 font-style: normal;
 font-weight: 600;
-font-size: 28px;
+font-size: 26px;
 line-height: 40px;
 color:white;
 align-items: center;
-letter-spacing: -0.015em;
+letter-spacing: 0.03em;
 text-transform: uppercase;
    }
    .accordion-button:not(.collapsed) {

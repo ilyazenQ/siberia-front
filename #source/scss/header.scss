@@ -6,7 +6,7 @@ header {
    font-weight: normal;
    color: #FFFFFF;
    .header__upper-nav{
-      border-bottom: 0.3px solid rgba(97, 255, 255, 0.42);
+      border-bottom: 0.1px solid rgba(97, 255, 255, 0.1);
       height: 40px;
       
    }
@@ -23,6 +23,9 @@ header {
          display: flex;
          align-items: center;
          border-radius: 3px;
+         &:hover {
+            background: rgba(17, 194, 173, 1);
+         }
          p{
             margin: 0 auto;
             a{
@@ -38,10 +41,53 @@ header {
          }
       }
       .lang-block {
-         margin-left: 30px;
+         margin-left: 50px;
+         .dropdown-toggle::after {
+            content: none;
+            
+            
+         }
+         
+         .dropdown {
+            position: relative;
+            .dropdown-menu {
+               background:none;
+               
+               .dropdown-item {
+                  
+                  width: 20px;
+                   padding: 0;
+                   margin: 0;
+               }
+               .dropdown-item:hover {
+                  background: none;
+               }
+            }
+            .dropdown-menu.show {
+               transform: translate3d(-40px, 21px, 0px) !important;
+            }
+            
+         
+         }
+         button {
+            position: absolute;
+            top:-5px;
+            left: -40px;
+            padding: 0;
+            margin: 0;
+            border: none;
+            background:none;
+            background-image: url(/img/icons/r.png);
+           background-repeat: no-repeat;
+           background-position-x: 100%;
+           background-position-y: 10%;
+            padding-right: 10px;
+
+         }
          a{
-            color:#FFFFFF;
+           color:#FFFFFF;
             text-decoration: none;
+            z-index: 20;
          }
       }
    }
@@ -102,6 +148,13 @@ height: 40px;
       letter-spacing: 0.1em;
       color: #FFFFFF;
       border: 1px solid #FFFFFF;
+      transition: all ease 0.8s;
+      &:hover {
+          
+            box-shadow: inset 165px 0 0 0 rgba(17, 194, 173, 1);
+            color: #fff;
+        
+      }
       }
       .btn-canv {
          img {
