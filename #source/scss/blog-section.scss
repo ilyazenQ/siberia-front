@@ -8,23 +8,26 @@
       margin-top: -20px;
       .add-card-wrap {
          width: 30%; 
-         a:hover{
-            h2 {
-               color:#003333;
+         .blog-inner__add-card:hover {
+            h2,p{
+            color:#003333;
             }
          }
+         
       }
       .main-card-wrap {
          width: 60%;
+         
          display: flex;
          justify-content: space-between;
       }
 
       .blog-inner__main-card {
-      
+      border-radius: 10px;
       width: 48%;
       }
       .main-card__img{
+         border-radius: 10px;
       width: 100%;
       height: 186px;
       background-repeat: no-repeat;

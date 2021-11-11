@@ -81,7 +81,7 @@ color: #EEFAF8;
    &:hover {
       
          //transform: scale(1.01);
-         box-shadow: 0px 8px 5px 5px aqua;
+        // box-shadow: 0px 8px 5px 5px aqua;
          .calendar-card_img-block {
             opacity: 1;
             p { 
@@ -340,7 +340,8 @@ color: #FFFFFF;
          background-size: cover;
          overflow: hidden;
          position:relative;
-         margin-bottom: 0px;
+         margin-bottom: 6px;
+
          display: flex;
          justify-content: center;
          align-items: flex-end;
@@ -503,7 +504,7 @@ color: #FFFFFF;
          background-size: cover;
          overflow: hidden;
          position:relative;
-         margin-bottom: 0px;
+         margin-bottom: 6px;
          display: flex;
          justify-content: center;
          align-items: flex-end;
@@ -681,7 +682,7 @@ color:white;
          background-size: cover;
          overflow: hidden;
          position:relative;
-         margin-bottom: 0px;
+         margin-bottom: 6px;
          display: flex;
          justify-content: center;
          align-items: flex-end;

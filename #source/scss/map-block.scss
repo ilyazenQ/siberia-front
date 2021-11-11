@@ -40,6 +40,14 @@ color: white;
       text-align: left;
       color: white;
     }
+    input:focus::placeholder {
+       color: transparent;
+    }
+   
+  
+   
+    
+
     
    .accordion {
       position: relative;
