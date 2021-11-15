@@ -200,7 +200,7 @@ color: #FFFFFF;
 
 }
 
-@media (max-width: 720px) {  
+@media (max-width: 910px) {  
 
    .calendar {
       
@@ -378,7 +378,7 @@ color: #FFFFFF;
 
 }
 
-@media (max-width: 560px) {  
+@media (max-width: 750px) {  
 
    .calendar {
       
@@ -386,6 +386,8 @@ color: #FFFFFF;
          position: relative;
          margin-top: 0px;
          margin-bottom: 40px;
+         margin-left: 2px;
+         margin-right: 2px;
          display: flex;
          justify-content: space-between;
          flex-wrap: wrap;
@@ -393,13 +395,13 @@ color: #FFFFFF;
       }
       
       .col-title {
-         margin-left: 5px;
+         margin-left: 0px;
          margin-bottom: 38px;
-         width: 100%;
+         width: 99%;
          display: flex;
          justify-content: space-around;
          p{
-            width: 120px;
+            width: 100px;
             font-family: 'Yrsa',sans-serif;
    font-style: normal;
    font-weight: 400;
@@ -431,14 +433,14 @@ color: #FFFFFF;
       // CARD START
       .calendar-card {
          
-      width: 28.93%;
+      width: 29.93%;
       height: auto;
       background: rgba(20, 224, 200, 0.2);
       box-shadow: 0px 5px 4px 3px #045651;
       border-radius: 20px;
       }
       .calendar-card-empty {
-         width: 28.93%;
+         width: 29.93%;
       height: auto;
       background: none;
       box-shadow: none;
@@ -497,7 +499,7 @@ color: #FFFFFF;
       }
       .calendar-card_img-block {
          width: 98%;
-         height: 100px;
+         height: 120px;
          margin: 0 auto;
          background-image: url(/img/ci.png);
          background-repeat: no-repeat;
@@ -539,10 +541,10 @@ color: #FFFFFF;
          font-family: Yrsa,sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
-line-height: 10px;
+font-size: 22px;
+line-height: 20px;
 /* or 275% */
-letter-spacing: 0.32em;
+letter-spacing: 0.2em;
 color:white;
       }
    
@@ -551,7 +553,7 @@ color:white;
 
 }
 
-@media (max-width: 460px) {  
+@media (max-width: 600px) {  
 
    .calendar {
       
