@@ -1,5 +1,14 @@
+
+.section-body__main-title.blog-section__main-title {
+   margin-bottom: 20px;
+
+}
+.section-title.blog-section__section-title {
+   margin-top: 20px;
+}
 .blog-section{
-   padding-top: 60px;
+   padding-top: 20px;
+   margin-bottom: 40px;
    position: relative;
    z-index: 10;
    .blog-inner{
@@ -16,7 +25,7 @@
          
       }
       .main-card-wrap {
-         width: 60%;
+         width: 63%;
          
          display: flex;
          justify-content: space-between;
@@ -24,7 +33,7 @@
 
       .blog-inner__main-card {
       border-radius: 10px;
-      width: 48%;
+      width: 46%;
       }
       .main-card__img{
          border-radius: 10px;
@@ -38,47 +47,55 @@
 
       }
       .main-card__title {
-         margin-top: 5px;
-         font-family: Montserrat;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 30px;
+         /* or 222% */
          
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-/* identical to box height, or 222% */
-
-letter-spacing: 0.09em;
-text-transform: uppercase;
-
-color: #FFFFFF;
+         display: flex;
+         align-items: center;
+         letter-spacing: 0.185em;
+         text-transform: uppercase;
+         
+         color: #FFFFFF;
       }
       .main-card__text {
-         font-family: Montserrat;
+         font-family: Roboto;
          font-style: normal;
          font-weight: normal;
          font-size: 14px;
-         /* identical to box height, or 286% */
+         line-height: 20px;
+         /* or 286% */
          
+         display: flex;
+         align-items: center;
          letter-spacing: 0.09em;
+         text-transform: lowercase;
          
          color: #FFFFFF;
          
       }
       .main-card__date {
          text-align: right;
-         font-family: Montserrat;
-         font-style: normal;
-         font-weight: 600;
-         font-size: 14px;
-         /* or 286% */
-         letter-spacing: 0.585em;
-         text-transform: uppercase;
-         
-         color: #FFFFFF;
+         font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 10px;
+/* or 400% */
+
+
+letter-spacing: 0.585em;
+text-transform: uppercase;
+
+color: #FFFFFF;
       }
 
    }
 }
-@media (max-width: 769px) {  
+@media (max-width: 770px) {  
 
    .blog-section{
       padding-top: 40px;
@@ -120,41 +137,14 @@ color: #FFFFFF;
          }
          .main-card__title {
             margin-top: 5px;
-            font-family: Montserrat;
             
-   font-style: normal;
-   font-weight: 600;
-   font-size: 18px;
-   /* identical to box height, or 222% */
-   
-   letter-spacing: 0.09em;
-   text-transform: uppercase;
-   
-   color: #FFFFFF;
          }
          .main-card__text {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            /* identical to box height, or 286% */
-            
-            letter-spacing: 0.09em;
-            
-            color: #FFFFFF;
+           
             
          }
          .main-card__date {
-            text-align: right;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            /* or 286% */
-            letter-spacing: 0.585em;
-            text-transform: uppercase;
-            
-            color: #FFFFFF;
+        
          }
    
       }
@@ -162,7 +152,7 @@ color: #FFFFFF;
 
 }
 
-@media (max-width: 501px) {  
+@media (max-width: 601px) {  
 
    .blog-section{
       padding-top: 30px;
@@ -205,41 +195,14 @@ color: #FFFFFF;
          }
          .main-card__title {
             margin-top: 5px;
-            font-family: Montserrat;
             
-   font-style: normal;
-   font-weight: 600;
-   font-size: 18px;
-   /* identical to box height, or 222% */
-   
-   letter-spacing: 0.09em;
-   text-transform: uppercase;
-   
-   color: #FFFFFF;
          }
          .main-card__text {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            /* identical to box height, or 286% */
             
-            letter-spacing: 0.09em;
-            
-            color: #FFFFFF;
             
          }
          .main-card__date {
-            text-align: right;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            /* or 286% */
-            letter-spacing: 0.585em;
-            text-transform: uppercase;
             
-            color: #FFFFFF;
          }
    
       }

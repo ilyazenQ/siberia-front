@@ -22,7 +22,15 @@ header {
          text-align: center;
          display: flex;
          align-items: center;
-         border-radius: 3px;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         
+      
+         letter-spacing: 0.085em;
+         text-transform: uppercase;
+         
          &:hover {
             background: rgba(17, 194, 173, 1);
          }
@@ -42,6 +50,9 @@ header {
       }
       .lang-block {
          margin-left: 50px;
+         font-family: Roboto;
+font-style: normal;
+font-weight: 500;
          .dropdown-toggle::after {
             content: none;
             
@@ -77,10 +88,11 @@ header {
             margin: 0;
             border: none;
             background:none;
+            
             background-image: url(/img/icons/r.png);
            background-repeat: no-repeat;
            background-position-x: 100%;
-           background-position-y: 10%;
+           background-position-y: 25%;
             padding-right: 10px;
 
          }
@@ -125,10 +137,10 @@ text-transform: uppercase;
             line-height: 30px;
          }
          .title-text__down{
-            letter-spacing: 0.3em;
+            letter-spacing: 0.21em;
 text-transform: uppercase;
 font-weight: 300;
-font-size: 15px;
+font-size: 16px;
 line-height: 40px;
          }
       }
@@ -144,8 +156,16 @@ height: 40px;
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
-      font-size: 11px;
-      letter-spacing: 0.1em;
+      font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 10px;
+/* or 0% */
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
       color: #FFFFFF;
       border: 1px solid #FFFFFF;
       transition: all ease 0.8s;
@@ -158,8 +178,8 @@ height: 40px;
       }
       .btn-canv {
          img {
-            height:60px; 
-            width:45px;
+            height:50px; 
+            width:50px;
          }
          margin-left: 51px;
       }
@@ -339,9 +359,7 @@ height: 40px;
             
             width: 140px;
    height: 30px;
-         font-family: Montserrat;
-         font-style: normal;
-         font-weight: normal;
+        
          font-size: 9px;
          letter-spacing: 0.1em;
          color: #FFFFFF;
@@ -420,14 +438,14 @@ height: 40px;
       align-items: center;
       justify-content: space-between;
       .phone-block{
-         font-size: 14px;
+         font-size: 12px;
          width: 125px;
          height: 40px;
          background: rgba(17, 194, 173, 0.38);
          text-align: center;
          display: flex;
          align-items: center;
-         border-radius: 3px;
+
          p{
             margin: 0 auto;
             padding: 0;

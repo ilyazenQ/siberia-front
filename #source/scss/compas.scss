@@ -34,8 +34,8 @@
    .fnt0 {font-weight:bold;font-size:6349.9px;font-family:'Consolas'}
    
   display: flex;
-   margin-bottom: 20px;
-   width: 100%;
+   margin-bottom: 40px;
+   width: 110%;
   //position: relative;
    //width: 600px;
   // height: 600px;
@@ -49,11 +49,11 @@
       width: 100%;
     //  top:-13%;
      // left: 5%;
-     transform: scale(2);
+     transform: scale(2.2);
 
    }
 }
-@media (max-width: 751px) {   
+@media (max-width: 1000px) {   
 
    .compas {
 
@@ -61,10 +61,10 @@
       
      display: flex;
       
-      width: 100%;
+      width: 90%;
      //position: relative;
       //width: 600px;
-     height: 600px;
+     height: 750px;
     //  overflow:hidden;
       
       
@@ -80,6 +80,33 @@
       }
    }
 }
+@media (max-width: 700px) {    
+  .compas {
+
+    margin-bottom: 0px;
+      
+     display: flex;
+      
+      width: 90%;
+     //position: relative;
+      //width: 600px;
+     height: 500px;
+    //  overflow:hidden;
+      
+      
+      svg {
+         padding-top:1em;
+      padding-bottom:2.3em;
+        //position: absolute;
+         width: 100%;
+       //  top:-13%;
+        // left: 5%;
+        transform: scale(1.9);
+   
+      }
+   }
+}
+
 
 @media (max-width: 551px) {   
 

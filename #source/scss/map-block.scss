@@ -20,7 +20,8 @@ line-height: 40px;
 letter-spacing: 0.055em;
 text-align: left;
 color: white;
-      width: 257px;
+width: 247px;
+margin-right: 18px;
       height: 26px;
       background: rgba(17, 194, 173, 0.53);
       background-image: url('/img/icons/se.png');
@@ -31,12 +32,16 @@ color: white;
       border-radius: 3px;
    }
    input::placeholder {
-      font-family: Montserrat;
-      font-size: 12px;
+      font-family: Roboto;
       font-style: normal;
       font-weight: 300;
+      font-size: 14px;
       line-height: 40px;
-      letter-spacing: 0.055em;
+      
+    
+      align-items: center;
+      letter-spacing: 0.085em;
+      text-transform: lowercase;
       text-align: left;
       color: white;
     }
@@ -201,7 +206,7 @@ color: #11C2AD;
       }
       input::placeholder {
          
-         font-size: 10px;
+         font-size: 13px;
         
        }
        
