@@ -3,43 +3,68 @@
    height: auto;
    min-height: 25rem;
    width: 100%;
-   overflow: hidden;
+   overflow:auto;
    
    .row {
       position: relative;
       margin-top: 0px;
       margin-bottom: 60px;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+     // justify-content: space-between;
+      flex-wrap: nowrap;
+      
+      
       
    }
-   
+   .calendar-body {
+      overflow: scroll;
+      cursor: all-scroll;
+      position: relative;
+      .calendar-move-right {
+         width: 40px;
+         height: 40px;
+         background: red;
+         position: sticky;
+         bottom:50%;
+         left: 95%;
+         cursor: pointer;
+      }
+
+      &::-webkit-scrollbar {
+         display: none;
+       }
+      
+   }
    .col-title {
-      margin-left: 50px;
+      
+      margin-left: 25px;
       margin-bottom: 38px;
-      width: 100%;
+      min-width: 1146px;
       display: flex;
-      justify-content: space-around;
+     // justify-content: space-around;
+      flex-wrap: nowrap;
+      
+      //margin-left: 29px;
       p{
          display: flex;
          justify-content: center;
          align-items: center;
-         width: 343px;
+         min-width: 343px;
          font-family: 'Yrsa',sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 50px;
-line-height: 43px;
+line-height: 55px;
 text-align: center;
 text-transform: uppercase;
 margin-bottom: 0px;
 color: rgba(255, 255, 255, 0.48);
+margin-left: 29px;
 
       }
    }
    .row-title-wrap {
-      margin-right: 25px;
+      margin-right: 5px;
       display: block;
       width: 25px;
    }
@@ -74,7 +99,8 @@ color: #EEFAF8;
       a {
          text-decoration: none;
       }
-   width: 28.93%;
+      margin-left: 24px;
+   width: 343px;
    height: auto;
    background: rgba(20, 224, 200, 0.2);
    
@@ -99,7 +125,8 @@ color: #EEFAF8;
 
    }
    .calendar-card-empty {
-      width: 28.93%;
+      margin-left: 29px;
+      width: 343px;
    height: auto;
    background: none;
    box-shadow: none;
@@ -202,531 +229,5 @@ color: #FFFFFF;
       display: none;
    }
 
-
-}
-
-@media (max-width: 910px) {  
-
-   .calendar {
-      
-      .row {
-         position: relative;
-         margin-top: 0px;
-         margin-bottom: 50px;
-         display: flex;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         
-      }
-      
-      .col-title {
-         margin-left: 43px;
-         margin-bottom: 38px;
-         width: 100%;
-         display: flex;
-         justify-content: space-around;
-         p{
-            width: 200px;
-            font-family: 'Yrsa',sans-serif;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 35px;
-   line-height: 35px;
-   text-align: center;
-   text-transform: uppercase;
-   margin-bottom: 0px;
-   color: rgba(255, 255, 255, 0.48);
-         }
-      }
-      .row-title-wrap {
-         margin-right: 10px;
-         display: block;
-         width: 25px;
-      }
-      .row-title {
-         position: absolute;
-         
-         display: block;
-         width: 25px;
-         overflow-wrap: break-word;
-         
-         p{
-            
-            margin-bottom: 0px;
-            display: inline;
-            //transform: rotate(450deg);
-            height: 100%;
-   
-            font-family: 'Yrsa',sans-serif;
-   font-style: normal;
-   font-weight: 500;
-   font-size: 25px;
-   line-height: 1.1em !important;
-   text-align: center;
-   text-transform: uppercase;
-   color: #EEFAF8;
-         }
-      }
-   
-   
-      // CARD START
-      .calendar-card {
-         
-      width: 28.93%;
-      height: auto;
-      background: rgba(20, 224, 200, 0.2);
-      box-shadow: 0px 5px 4px 3px #045651;
-      border-radius: 20px;
-      }
-      .calendar-card-empty {
-         width: 28.93%;
-      height: auto;
-      background: none;
-      box-shadow: none;
-      border-radius: 20px;
-      }
-      .calendar-card__date {
-         margin: 0;
-         margin-top: 18px;
-         display: flex;
-         justify-content: center;
-         p {
-            font-family: 'Yrsa',sans-serif;
-   font-style: normal;
-   font-weight: 300;
-   font-size: 25px;
-   
-   letter-spacing: 0.25em;
-   text-transform: uppercase;
-   
-   color: #FFFFFF;
-            margin: 0;
-           
-         }
-      }
-      .calendar-card__text {
-         margin: 0;
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         h3{
-            font-family: 'Yrsa',sans-serif;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            letter-spacing: 0.32em;
-            text-transform: uppercase;
-            
-            color: #FFFFFF;
-         }
-      }
-      .calendar-add-block {
-         margin: -21px auto;
-         display: flex;
-         justify-content: space-between;
-         height: auto;
-         width: 78%;
-         .calendar-add {
-            display: block;
-            width: 20px;
-   height: 40px;
-   background: #045651;
-   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 5px;
-         }
-   
-      }
-      .calendar-card_img-block {
-         width: 98%;
-         height: 150px;
-         margin: 0 auto;
-         background-image: url(/img/ci.png);
-         background-repeat: no-repeat;
-         background-size: cover;
-         overflow: hidden;
-         position:relative;
-         margin-bottom: 6px;
-
-         display: flex;
-         justify-content: center;
-         align-items: flex-end;
-        // img {
-          //  height: 100%;
-        //   width: auto;
-        //   padding-bottom: 10px;
-       //  }
-         p {
-            display: block;
-            width: 130px;
-   height: 20px;
-   text-align: center;
-    
-    background: rgba(47, 44, 44, 0.69);
-    border-radius: 5px;
-    font-family: Roboto;
-    font-style: normal;
-   font-weight: 300;
-   font-size: 14px;
-   letter-spacing: 0.09em;
-   
-   color: #FFFFFF;
-         }
-      }
-      
-      // CARD END
-      .row-title-mobail {
-         display: none;
-      }
-   
-   
-   }
-
-}
-
-@media (max-width: 750px) {  
-
-   .calendar {
-      
-      .row {
-         position: relative;
-         margin-top: 0px;
-         margin-bottom: 40px;
-         margin-left: 2px;
-         margin-right: 2px;
-         display: flex;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         
-      }
-      
-      .col-title {
-         margin-left: 0px;
-         margin-bottom: 38px;
-         width: 99%;
-         display: flex;
-         justify-content: space-around;
-         p{
-            width: 100px;
-            font-family: 'Yrsa',sans-serif;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 25px;
-   line-height: 35px;
-   text-align: center;
-   text-transform: uppercase;
-   margin-bottom: 0px;
-   color: rgba(255, 255, 255, 0.48);
-         }
-      }
-      .row-title-wrap {
-         margin-right: 10px;
-         display: none;
-         width: 0px;
-      }
-      .row-title {
-         position: absolute;
-         
-         
-         
-         p{
-            display: none;
-            
-         }
-      }
-   
-   
-      // CARD START
-      .calendar-card {
-         
-      width: 29.93%;
-      height: auto;
-      background: rgba(20, 224, 200, 0.2);
-      box-shadow: 0px 5px 4px 3px #045651;
-      border-radius: 20px;
-      }
-      .calendar-card-empty {
-         width: 29.93%;
-      height: auto;
-      background: none;
-      box-shadow: none;
-      border-radius: 20px;
-      }
-      .calendar-card__date {
-         margin: 0;
-         margin-top: 18px;
-         display: flex;
-         justify-content: center;
-         p {
-            font-family: 'Yrsa',sans-serif;
-   font-style: normal;
-   font-weight: 300;
-   font-size: 20px;
-   
-   letter-spacing: 0.25em;
-   text-transform: uppercase;
-   
-   color: #FFFFFF;
-            margin: 0;
-           
-         }
-      }
-      .calendar-card__text {
-         margin: 0;
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         h3{
-            font-family: 'Yrsa',sans-serif;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            letter-spacing: 0.32em;
-            text-transform: uppercase;
-            
-            color: #FFFFFF;
-         }
-      }
-      .calendar-add-block {
-         margin: -12px auto;
-         display: flex;
-         justify-content: space-between;
-         height: auto;
-         width: 78%;
-         .calendar-add {
-            display: block;
-            width: 12px;
-   height: 24px;
-   background: #045651;
-   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 5px;
-         }
-   
-      }
-      .calendar-card_img-block {
-         width: 98%;
-         height: 120px;
-         margin: 0 auto;
-         background-image: url(/img/ci.png);
-         background-repeat: no-repeat;
-         background-size: cover;
-         overflow: hidden;
-         position:relative;
-         margin-bottom: 6px;
-         display: flex;
-         justify-content: center;
-         align-items: flex-end;
-        // img {
-          //  height: 100%;
-        //   width: auto;
-        //   padding-bottom: 10px;
-       //  }
-         p {
-            display: block;
-            width: 130px;
-   height: 20px;
-   text-align: center;
-    
-    background: rgba(47, 44, 44, 0.69);
-
- 
-   
-   color: #FFFFFF;
-         }
-      }
-      
-      // CARD END
-      .row-title-mobail {
-         margin: 0px;
-         padding: 0;
-         display: block;
-         font-family: Yrsa,sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 20px;
-/* or 275% */
-letter-spacing: 0.2em;
-color:white;
-      }
-   
-   
-   }
-
-}
-
-@media (max-width: 600px) {  
-
-   .calendar {
-      
-      .row {
-         position: relative;
-         margin-top: 0px;
-         margin-bottom: 40px;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         
-      }
-      
-      .col-title {
-         
-         margin-left: 5px;
-         margin-bottom: 38px;
-         width: 100%;
-         display: none;
-         justify-content: space-around;
-         p{
-            width: 120px;
-            font-family: 'Yrsa',sans-serif;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 25px;
-   line-height: 35px;
-   text-align: center;
-   text-transform: uppercase;
-   margin-bottom: 0px;
-   color: rgba(255, 255, 255, 0.48);
-         }
-
-      }
-      .row-title-wrap {
-         margin-right: 10px;
-         display: none;
-         width: 0px;
-      }
-      .row-title {
-         position: absolute;
-         
-         
-         
-         p{
-            display: none;
-            
-         }
-      }
-   
-   
-      // CARD START
-      .calendar-card {
-         margin: 0 auto;
-      width: 95%;
-      height: auto;
-      background: rgba(20, 224, 200, 0.2);
-      box-shadow: 0px 5px 4px 3px #045651;
-      border-radius: 20px;
-      margin-bottom: 30px;
-      }
-      .calendar-card-empty {
-         display: none;
-         width: 28.93%;
-      height: auto;
-      background: none;
-      box-shadow: none;
-      border-radius: 20px;
-      }
-      .calendar-card__date {
-         margin: 0;
-         margin-top: 18px;
-         display: flex;
-         justify-content: center;
-         p {
-            font-family: 'Yrsa',sans-serif;
-   font-style: normal;
-   font-weight: 300;
-   font-size: 30px;
-   
-   letter-spacing: 0.25em;
-   text-transform: uppercase;
-   
-   color: #FFFFFF;
-            margin: 0;
-           
-         }
-      }
-      .calendar-card__text {
-         margin: 0;
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         h3{
-            font-family: 'Yrsa',sans-serif;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 18px;
-            letter-spacing: 0.32em;
-            text-transform: uppercase;
-            
-            color: #FFFFFF;
-         }
-      }
-      .calendar-add-block {
-         margin: -20px auto;
-         display: flex;
-         justify-content: space-between;
-         height: auto;
-         width: 78%;
-         .calendar-add {
-            display: block;
-            width: 20px;
-   height: 40px;
-   background: #045651;
-   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 5px;
-         }
-   
-      }
-      .calendar-card_img-block {
-         width: 98%;
-         height: 250px;
-         margin: 0 auto;
-         background-image: url(/img/ci.png);
-         background-repeat: no-repeat;
-         background-size: cover;
-         overflow: hidden;
-         position:relative;
-         margin-bottom: 6px;
-         display: flex;
-         justify-content: center;
-         align-items: flex-end;
-        // img {
-          //  height: 100%;
-        //   width: auto;
-        //   padding-bottom: 10px;
-       //  }
-         p {
-            display: block;
-            width: 150px;
-   height: 40px;
-   text-align: center;
-    
-    background: rgba(47, 44, 44, 0.69);
-    border-radius: 5px;
-  
-   font-size: 20px;
-   letter-spacing: 0.09em;
-   
-   color: #FFFFFF;
-         }
-      }
-     
-      // CARD END
-      .row-title-mobail {
-         margin: 0 auto;
-         padding: 0;
-         display: block;
-         text-align: center;
-         font-family: Yrsa,sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 35px;
-line-height: 40px;
-/* or 275% */
-letter-spacing: 0.20em;
-color:white;
-      }
-   
-   
-   }
 
 }
