@@ -1,11 +1,15 @@
-
+.section-title.section-title-calendar {
+   margin-top: 40px;
+}
 .calendar {
+   
    height: auto;
    min-height: 25rem;
    width: 100%;
    overflow:auto;
    
    .row {
+     
       position: relative;
       margin-top: 0px;
       margin-bottom: 60px;
@@ -17,6 +21,7 @@
       
    }
    .calendar-body {
+      margin-left: 48px;
       overflow: scroll;
       cursor: all-scroll;
       position: relative;
@@ -37,34 +42,38 @@
    }
    .col-title {
       
-      margin-left: 25px;
-      margin-bottom: 38px;
+      
+      margin-bottom: 10px;
       min-width: 1146px;
       display: flex;
      // justify-content: space-around;
       flex-wrap: nowrap;
       
-      //margin-left: 29px;
+      margin-left: 88px;
       p{
          display: flex;
          justify-content: center;
          align-items: center;
-         min-width: 343px;
+         min-width: 300px;
          font-family: 'Yrsa',sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 55px;
-text-align: center;
-text-transform: uppercase;
+         font-size: 48px;
+        
+         /* or 0% */
+         
+         display: flex;
+         align-items: center;
+         text-align: center;
+         letter-spacing: -0.04em;
+         text-transform: uppercase;
+
+         color: rgba(255, 255, 255, 0.48);
 margin-bottom: 0px;
-color: rgba(255, 255, 255, 0.48);
-margin-left: 29px;
+margin-right: 56px;
 
       }
    }
    .row-title-wrap {
-      margin-right: 5px;
+      margin-right: 73px;
       display: block;
       width: 25px;
    }
@@ -85,7 +94,7 @@ margin-left: 29px;
          font-family: 'Yrsa',sans-serif;
 font-style: normal;
 font-weight: 500;
-font-size: 36px;
+font-size: 28px;
 
 text-align: center;
 text-transform: uppercase;
@@ -99,15 +108,13 @@ color: #EEFAF8;
       a {
          text-decoration: none;
       }
-      margin-left: 24px;
-   width: 343px;
-   height: auto;
-   background: rgba(20, 224, 200, 0.2);
-   
-   box-shadow: 0px 5px 4px 3px #045651;
-   border-radius: 20px;
-   transition: all ease 0.6s;
-
+      margin-right: 56px;
+      width: 300px;
+      height: 320px;
+      background: rgba(20, 224, 200, 0.2);
+     box-shadow: 0px 5px 4px 3px #045651;
+      border-radius: 10px;
+      padding: 0px;
    &:hover {
       
          //transform: scale(1.01);
@@ -125,80 +132,91 @@ color: #EEFAF8;
 
    }
    .calendar-card-empty {
-      margin-left: 29px;
-      width: 343px;
-   height: auto;
+      margin-left: 48px;
+      width: 300px;
+      height: 320px;
    background: none;
    box-shadow: none;
-   border-radius: 20px;
+   border-radius: 10px;
    }
    .calendar-card__date {
-      margin: 0;
-      margin-top: 18px;
-      display: flex;
-      justify-content: center;
-      p {
-         font-family: 'Yrsa',sans-serif;
+      width: 300px;
+height: 25px;
+
+font-family: Yrsa;
 font-style: normal;
-font-weight: 300;
-font-size: 32px;
+margin-top: 25px;
 
-letter-spacing: 0.25em;
-text-transform: uppercase;
 
-color: #FFFFFF;
-         margin: 0;
+      p {
+         font-family: Yrsa;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 24px;
+       
+         text-align: center;
+         letter-spacing: 0.1em;
+         text-transform: uppercase;
+         color: #FFFFFF;
+         margin-bottom: 0px;
         
       }
    }
    .calendar-card__text {
-      margin: 0;
+width: 300px;
+height: 53px;
       display: flex;
       justify-content: center;
       text-align: center;
       h3{
          font-family: 'Yrsa',sans-serif;
-         font-style: normal;
-         font-weight: 300;
-         font-size: 18px;
-         letter-spacing: 0.32em;
-         text-transform: uppercase;
-         
-         color: #FFFFFF;
+font-style: normal;
+font-weight: 300;
+
+line-height: 20px;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+margin-bottom: 0px;
+color: #FFFFFF;
+
       }
    }
    .calendar-add-block {
-      margin: -21px auto;
+      margin: -17px auto;
       display: flex;
       justify-content: space-between;
-      height: auto;
-      width: 78%;
+      height: 34px;
+      width: 224px;
       .calendar-add {
          display: block;
-         width: 20px;
-height: 40px;
-background: #045651;
-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 5px;
+         width: 18px;
+         height: 34px;
+         background: #045651;
+         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+         border-radius: 5px;
       }
 
    }
    .calendar-card_img-block {
-      width: 98%;
-      height: 250px;
-      opacity: 80%;
+      width: 300px;
+      height: 216px;
+      opacity: 85%;
       
-      margin: 0 auto;
+      
       background-image: url(/img/ci.png);
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
       position:relative;
-      margin-bottom: 6px;
+      margin-bottom: 0px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      border-radius: 5px;
+      border-radius: 0px 0px 10px 10px;
      // img {
        //  height: 100%;
      //   width: auto;
@@ -208,19 +226,26 @@ border-radius: 5px;
       p {
          
          display: block;
-         width: 147px;
-height: 30px;
+         width: 122px;
+height: 26px;
 text-align: center;
  
- background: rgba(47, 44, 44, 0.69);
- border-radius: 5px;
+background: rgba(47, 44, 44, 0.69);
+border-radius: 5px;
  font-family: Roboto;
  font-style: normal;
-font-weight: 300;
-font-size: 16px;
-letter-spacing: 0.18em;
+ font-weight: 300;
+ font-size: 14px;
+ line-height: 18px;
+ 
+ display: flex;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ letter-spacing: 0.15em;
 transition: all ease 0.8s;
 color: #FFFFFF;
+margin-bottom: 8px;
       }
    }
  
@@ -231,3 +256,11 @@ color: #FFFFFF;
 
 
 }
+@media (max-width: 1146px) {
+   .calendar {
+   .calendar-body {
+     margin-left: 0px;
+     
+   }
+}
+ }
