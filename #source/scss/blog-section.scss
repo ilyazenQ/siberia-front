@@ -8,6 +8,8 @@
 }
 .blog-section{
    padding-top: 20px;
+   padding-left: 0px;
+   padding-right: 0px;
    margin-bottom: 40px;
    position: relative;
    z-index: 10;
@@ -16,7 +18,10 @@
       justify-content: space-between;
       margin-top: -20px;
       .add-card-wrap {
-         width: 30%; 
+         width: 371px;
+         .blog-inner__add-card {
+            padding-bottom: 5px;
+         }
          .blog-inner__add-card:hover {
             h2,p{
             color:#003333;
@@ -25,20 +30,22 @@
          
       }
       .main-card-wrap {
-         width: 63%;
+         width: auto;
          
          display: flex;
          justify-content: space-between;
       }
 
       .blog-inner__main-card {
-      border-radius: 10px;
-      width: 46%;
+      border-radius: 5px;
+      width: 360px;
+      margin-right: 24px;
       }
       .main-card__img{
-         border-radius: 10px;
-      width: 100%;
-      height: 186px;
+         margin-bottom: 8px;
+         border-radius: 5px;
+         width: 360px;
+         height: 227px;
       background-repeat: no-repeat;
       background-size: cover;
       }
@@ -50,9 +57,9 @@
          font-family: Roboto;
          font-style: normal;
          font-weight: 500;
-         font-size: 18px;
-         line-height: 30px;
-         /* or 222% */
+         font-size: 20px;
+         line-height: 25px;
+         /* or 125% */
          
          display: flex;
          align-items: center;
@@ -65,14 +72,12 @@
          font-family: Roboto;
          font-style: normal;
          font-weight: normal;
-         font-size: 14px;
-         line-height: 20px;
-         /* or 286% */
+         font-size: 18px;
+         line-height: 25px;
+         /* or 139% */
          
          display: flex;
          align-items: center;
-         letter-spacing: 0.09em;
-         text-transform: lowercase;
          
          color: #FFFFFF;
          
@@ -82,7 +87,7 @@
          font-family: Roboto;
 font-style: normal;
 font-weight: 500;
-font-size: 10px;
+font-size: 14px;
 line-height: 10px;
 /* or 400% */
 
@@ -95,7 +100,7 @@ color: #FFFFFF;
 
    }
 }
-@media (max-width: 770px) {  
+@media (max-width: 1000px) {  
 
    .blog-section{
       padding-top: 40px;
