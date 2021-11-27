@@ -37,3 +37,9 @@ body {
 .my-link {
   text-decoration:none;
 }
+@media (max-width: 1184px) {  
+  .container-large { 
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}

@@ -1,16 +1,30 @@
 .filtr-down {
+   max-width: 882px;
+   margin: 0 auto;
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-between;
 
+   .first {
+      border-radius: 5px 0px 0px 5px;
+   }
+   .second {
+
+   }
+   .third {
+      border-radius: 0px 5px 5px 0px;
+   }
    .dropdown {
       width: 290px;
       height: 52px;
       
       border: 1px solid #FFFFFF;
       box-sizing: border-box;
-      border-radius: 5px 0px 0px 5px;
+      
      
       
       display: flex;
-      
+     
       button {
          text-align: start;
          width: 100%;
@@ -27,22 +41,43 @@ padding-left: 20px;
 
 color: #FFFFFF;
 transition: all ease 0.8s;
+
 img {
    width: 25px;
    height: 25px;
    position: absolute;
    right: 13px;
+   top:28%;
+   
 }
+.collapsed {
+   display: none;
+  }
+  .active {
+    display: block;
+  }
+
 &:hover {
    background: #045651;
    color: #fff;
 }
+
       }
-      .show {
+      button.show{
+         .collapsed {
+            display: block;
+           }
+           .active {
+             display: none;
+           }
+      }
+     .show {
          background: #045651;
          border: none;
          box-shadow: none;
+        
       }
+
       .btn-check:focus+.btn, .btn:focus {
          outline: 0;
          box-shadow: none;
