@@ -18,7 +18,7 @@
       justify-content: space-between;
       margin-top: -20px;
       .add-card-wrap {
-         width: 371px;
+         width: 379px;
          .blog-inner__add-card {
             padding-bottom: 5px;
          }
@@ -38,13 +38,13 @@
 
       .blog-inner__main-card {
       border-radius: 5px;
-      width: 360px;
+      width: 379px;
       margin-right: 24px;
       }
       .main-card__img{
          margin-bottom: 8px;
          border-radius: 5px;
-         width: 360px;
+         width: 379px;
          height: 227px;
       background-repeat: no-repeat;
       background-size: cover;
@@ -160,6 +160,7 @@ color: #FFFFFF;
 @media (max-width: 601px) {  
 
    .blog-section{
+      margin-left: 5px;
       padding-top: 30px;
       position: relative;
       z-index: 10;

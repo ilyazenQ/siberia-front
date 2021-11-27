@@ -4,17 +4,17 @@
 
 .calendar-move-right {
      
-      
    width: 40px;
    height: 40px;
  
-   background-image: url(/img/icons/np.png);
+   
 
    z-index: 50;
    
-  
- position: absolute;
- top: 50%;
+position: -webkit-sticky;
+ position: sticky;
+ top: 500px;
+ left:90%;
 
    cursor: pointer;
  //  float: right;
