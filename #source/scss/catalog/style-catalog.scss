@@ -4,6 +4,9 @@
 @import "catalog-main";
 @import "section-title";
 @import "discover";
+@import "blog-section";
+@import "footer";
+
 
 .container {
   max-width: 1184px;
@@ -21,12 +24,16 @@
   max-width: 1184px;
 }
 html {
-  //overflow-x: hidden;
+  max-width: 100%;
+    overflow-x: hidden;
+  
 }
 body {
   position: relative;
   background: linear-gradient(180deg, #02201C 21.88%, #06443D 35.94%, rgba(9, 102, 91, 0.893633) 81.06%, #11C2AD 96.03%);  position: relative;
-  //overflow-x: hidden;
+  max-width: 100%;
+    overflow-x: hidden;
+ 
 }
 .my-btn {
    padding: 0;

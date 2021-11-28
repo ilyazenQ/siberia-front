@@ -125,6 +125,7 @@ color: #FFFFFF;
    flex-wrap: wrap;
    margin-left:48px;
    margin-right:24px;
+   
  // margin-right:48px;
     // CARD START
     .calendar-card {
@@ -303,4 +304,163 @@ height: 5px;
    }
 }
    
+}
+@media (max-width: 500px) {  
+
+   .filtr-down {
+      max-width: 359px;
+      margin: 0 auto;
+      margin-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      
+   
+      .first {
+         border-radius: 5px 0px 0px 5px;
+      }
+      .second {
+   
+      }
+      .third {
+         border-radius: 0px 5px 5px 0px;
+      }
+      .dropdown {
+         max-width: 118px;
+         height: 28px;
+         
+         border: 1px solid #FFFFFF;
+         box-sizing: border-box;
+         
+        
+         
+         display: flex;
+        
+         button {
+            text-align: start;
+            width: 100%;
+            font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   
+   letter-spacing: 0.2em;
+   padding: 0;
+   margin: 0;
+   border: none;
+   padding-left: 5px;
+   
+   color: #FFFFFF;
+   transition: all ease 0.8s;
+   
+   img {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 4px;
+      top:28%;
+      
+   }
+   .collapsed {
+      display: none;
+     }
+     .active {
+       display: block;
+     }
+   
+   &:hover {
+      background: #045651;
+      color: #fff;
+   }
+   
+         }
+         button.show{
+            .collapsed {
+               display: block;
+              }
+              .active {
+                display: none;
+              }
+         }
+        .show {
+            background: #045651;
+            border: none;
+            box-shadow: none;
+           
+         }
+   
+         .btn-check:focus+.btn, .btn:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+      .dropdown-toggle::after {
+       display: none;
+       
+      }
+      .dropdown-menu {
+         background: #045651;
+         width: auto;
+         min-width: 120px;
+         border: 1px solid #FFFFFF;
+         box-sizing: border-box;
+         .dropdown-item {
+            
+            background: #045651;
+            font-family: Roboto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 34px;
+   padding-left: 8px;
+   padding-top: 0px;
+   padding-right: 0px;
+   padding-bottom: 0px;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.2em;
+   color: #FFFFFF;
+   &:hover {
+      background: aqua;
+   }
+           
+         }
+         
+      }
+      .dropdown-menu.show {
+         transform: translate3d(0px, 28px, 0px) !important;
+      }
+      }
+   }
+
+   .content-cards {
+    
+       .calendar-card {
+         a {
+            text-decoration: none;
+         }
+        margin-right: 18px;
+        margin-top: 50px;
+         width: 278px;
+         height: 293px;
+         background: rgba(20, 224, 200, 0.2);
+        box-shadow: 0px 5px 4px 3px #045651;
+         border-radius: 10px;
+         padding: 0px;
+      &:hover {
+         
+            //transform: scale(1.01);
+           // box-shadow: 0px 8px 5px 5px aqua;
+            .calendar-card_img-block {
+               opacity: 1;
+               p { 
+               box-shadow: inset 147px 0 0 0 rgba(17, 194, 173, 1);
+               color: #fff;
+               }
+            }
+          
+         
+      }
+   
+      }
+   }
+
 }
