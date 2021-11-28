@@ -24,7 +24,7 @@ rightMoverArr.forEach(el => {
 });
 calendarBody.addEventListener('scroll',scrollBody)
 function scrollBody() {
-	console.log(calendarBody.scrollLeft);
+//	console.log(calendarBody.scrollLeft);
  rightMoverArr.forEach(el => {
   let currentRight = parseInt(el.style.right);
 
