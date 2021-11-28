@@ -4,6 +4,7 @@
    margin-top: 50px;
    display: flex;
    justify-content: space-between;
+   
 
    .first {
       border-radius: 5px 0px 0px 5px;
@@ -114,4 +115,192 @@ color: #FFFFFF;
       transform: translate3d(0px, 52px, 0px) !important;
    }
    }
+}
+
+// content-cards
+.content-cards {
+   display: flex;
+   //justify-content: flex-start;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-left:48px;
+   margin-right:24px;
+ // margin-right:48px;
+    // CARD START
+    .calendar-card {
+      a {
+         text-decoration: none;
+      }
+     margin-right: 18px;
+     margin-top: 60px;
+      width: 278px;
+      height: 293px;
+      background: rgba(20, 224, 200, 0.2);
+     box-shadow: 0px 5px 4px 3px #045651;
+      border-radius: 10px;
+      padding: 0px;
+   &:hover {
+      
+         //transform: scale(1.01);
+        // box-shadow: 0px 8px 5px 5px aqua;
+         .calendar-card_img-block {
+            opacity: 1;
+            p { 
+            box-shadow: inset 147px 0 0 0 rgba(17, 194, 173, 1);
+            color: #fff;
+            }
+         }
+       
+      
+   }
+
+   }
+   
+   .calendar-card__date {
+      width:278px;
+height: 25px;
+
+font-family: Yrsa;
+font-style: normal;
+margin-top: 25px;
+
+
+      p {
+         font-family: Yrsa;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 20px;
+       
+         text-align: center;
+         letter-spacing: 0.1em;
+         text-transform: uppercase;
+         color: #FFFFFF;
+         margin-bottom: 0px;
+        
+      }
+   }
+   .calendar-card__text {
+      width: 278px;
+      height: 53px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      h3{
+         font-family: 'Yrsa',sans-serif;
+font-style: normal;
+font-weight: 300;
+line-height: 20px;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+margin-bottom: 0px;
+color: #FFFFFF;
+
+      }
+   }
+   .calendar-add-block {
+      margin: -17px auto;
+      display: flex;
+      justify-content: space-between;
+      height: 34px;
+      width: 224px;
+      .calendar-add {
+         display: block;
+         width: 18px;
+         height: 34px;
+         background: #045651;
+         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+         border-radius: 5px;
+      }
+
+   }
+   .calendar-card_img-block {
+      width: 278px;
+      height: 193px;
+      opacity: 85%;
+      
+      
+      background-image: url(/img/ci.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      position:relative;
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      border-radius: 0px 0px 10px 10px;
+     // img {
+       //  height: 100%;
+     //   width: auto;
+     //   padding-bottom: 10px;
+    //  }
+    
+      p {
+         
+         display: block;
+         width: 122px;
+height: 26px;
+text-align: center;
+ 
+background: rgba(47, 44, 44, 0.69);
+border-radius: 5px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: 300;
+ font-size: 14px;
+ line-height: 18px;
+ 
+ display: flex;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ letter-spacing: 0.15em;
+transition: all ease 0.8s;
+color: #FFFFFF;
+margin-bottom: 8px;
+      }
+   }
+ 
+   // CARD END
+}
+.catalog-main__show-more {
+   margin-top: 28px;
+   display: flex;
+   justify-content: flex-end;
+.show-more-item {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+
+   p {
+   font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 40px;
+/* or 333% */
+
+display: flex;
+align-items: center;
+text-align: right;
+letter-spacing: 0.145em;
+text-transform: lowercase;
+margin-right: 30px;
+color: #E0FCF9;
+   }
+   img {
+      position: absolute;
+      display: block;
+      width: 23px;
+height: 5px;
+      top: 30%;
+      left: 85%;
+   }
+}
+   
 }
