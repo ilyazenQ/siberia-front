@@ -65,3 +65,33 @@ function scrollBody() {
   parseInt(calendarBody.scrollLeft,10) + 'px';
 });
 }
+
+const  knowItems = document.querySelectorAll('.know-item')
+const  knowWrapper = document.querySelector('.know-left')
+function openCloseKnowItem(el) {
+
+ if(el.target.tagName === 'DIV') {
+
+     el = el.target;
+  } else {
+     el = el.target.parentElement;
+  }
+  el = el.parentElement;
+  knowItems.forEach(day => {
+   
+     if(el === day) {
+        if(el.classList.contains("active")) {
+         el.classList.remove("active");
+         return;
+        } else {
+         el.classList.add("active");
+        }
+     }
+     
+  });
+  
+  
+};
+knowItems.forEach(el => {
+  el.addEventListener('click',openCloseKnowItem)
+});
