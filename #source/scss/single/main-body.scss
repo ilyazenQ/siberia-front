@@ -1,9 +1,12 @@
 .main-body {
+   position: relative;
    margin-top: 45px;
    .main-body__content {
-
+      position: relative;
+      display: flex;
+      justify-content: space-between;
          .content__days {
-            max-width: 100%;
+            width: 100%;
 
          }
          .day {
@@ -57,7 +60,7 @@
                line-height: 34px;
 /* or 189% */
 
-            text-align: justify;
+           
             letter-spacing: 0.09em;
 
                color: #FFFFFF;
@@ -83,4 +86,136 @@
          }
 
    }
+}
+.sidebar-wrp {
+  
+   height: auto;
+}
+.content__sidebar {
+  position: sticky;
+  top:20px;
+   margin-top: 48px;
+   margin-left: 24px;
+   margin-bottom: 10px;
+   .calendar-card {
+      
+   
+  
+     
+      
+      max-width: 379px;
+      height: auto;
+
+
+      background: rgba(20, 224, 200, 0.2);
+      box-shadow: 0px 5px 4px 3px #045651;
+      border-radius: 20px;
+      
+         
+
+   }
+   .calendar-add-block {
+      
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      height: 34px;
+      width: 285px;
+      
+      .calendar-add {
+         margin-top: -18px;
+         display: block;
+         width: 20px;
+         height: 36px;
+         background: #045651;
+         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+         border-radius: 5px;
+      }
+
+   }
+   .sidebar__text-block {
+      margin-left: 32px;
+      margin-top: 26px;
+      display: flex;
+      
+      
+      img {
+         display: flex;
+         
+         width: 40px;
+         height: 40px;
+      }
+      p {
+         margin-left: 21px;
+         font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 34px;
+/* identical to box height, or 170% */
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: #FFFFFF;
+      }
+   }
+   .dif {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      li {
+         list-style-type: none;
+         margin-right: 20px;
+         img {
+            width: 33px;
+            height: 35px;
+         }
+
+      }
+   }
+   .sidebar__map {
+      margin-top: 40px;
+      margin-left: 9px;
+      margin-right: 9px;
+     // background-image: url(/img/icons/se2.png);
+     ///img/im.png
+      .map {
+         max-width: 100%;
+         height: 400px;
+      }
+     
+   }
+   .btn-wrapper {
+      margin-top:25px;
+      padding-bottom: 35px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+   .btn-sidebar {
+      text-align: center;
+      
+      width: 277px;
+      height: 63px;
+   
+      
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+/* or 0% */
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      transition: all ease 0.8s;
+      &:hover {
+          
+            box-shadow: inset 277px 0 0 0 rgba(17, 194, 173, 1);
+            color: #fff;
+        
+      }
+    }
+
 }
