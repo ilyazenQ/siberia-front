@@ -1,0 +1,77 @@
+.see-wrapper {
+   height: 530px;
+   background: #045651;
+   overflow: auto;
+   position: relative;
+   
+   .calendar-move-right {
+     
+      width: 40px;
+      height: 40px;
+    
+      
+   
+      z-index: 50;
+      
+   
+    position: sticky;
+    bottom:200px;
+    left:95%;
+   
+      cursor: pointer;
+    //  float: right;
+   }
+   .section-see {
+      width: auto;
+      overflow: auto;
+      display: flex;
+      margin-top: 24px;
+      position: relative;
+      overflow: scroll;
+      cursor: all-scroll;
+      &::-webkit-scrollbar {
+         display: none;
+       }
+      
+      .see-card {
+         position: relative;
+         z-index: 10;
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 278px;
+         height: 339px;
+         border-radius: 5px;
+         display: flex;
+         flex-direction: column;
+         justify-content: end;
+         margin-right: 24px;
+         .see-card__text {
+            width: 278px;
+            height: 70px;
+            background: rgba(21, 21, 21, 0.54);
+            border-radius: 0px 0px 5px 5px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+               font-family: Roboto;
+               font-style: normal;
+               font-weight: normal;
+               font-size: 18px;
+               line-height: 34px;
+               /* or 189% */
+
+               
+              
+               text-align: center;
+               letter-spacing: 0.05em;
+
+               color: #FFFFFF;
+            }
+         }
+      }
+   }
+
+}
