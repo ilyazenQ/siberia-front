@@ -1,4 +1,5 @@
 .see-wrapper {
+   
    height: 530px;
    background: #045651;
    overflow: auto;
@@ -22,6 +23,7 @@
     //  float: right;
    }
    .section-see {
+      margin-left:48px;
       width: auto;
       overflow: auto;
       display: flex;
@@ -74,4 +76,43 @@
       }
    }
 
+}
+@media (max-width: 1184px) {  
+   .see-wrapper {
+   
+      .calendar-move-right {
+        
+      }
+      .section-see {
+         margin-left:8px;
+        
+ }
+}
+}
+ 
+@media (max-width: 490px) {  
+   .see-wrapper {
+      height: 530px;
+      background: #045651;
+      overflow: auto;
+      position: relative;
+      
+      .calendar-move-right {
+        
+         width: 40px;
+         height: 40px;
+       
+         
+      
+         z-index: 50;
+         
+      
+       position: sticky;
+       bottom:250px;
+       left:95%;
+      
+         cursor: pointer;
+       //  float: right;
+      }
+   }
 }

@@ -34,6 +34,7 @@
                   letter-spacing: 0.09em;                  
                   color: #FFFFFF;
                   padding-left: 21px;
+                  padding-right: 30px;
                }
                img {
                   cursor: pointer;
@@ -72,7 +73,7 @@
                height: 364px;
                display: flex;
                align-items: start;
-               padding-top: 22px;
+               padding-top: 13px;
                .open {
                   display: none;
                }
@@ -217,5 +218,383 @@ letter-spacing: 0.1em;
         
       }
     }
+
+}
+@media (max-width: 900px) {  
+   .main-body {
+     
+      .main-body__content {
+        
+            .content__days {
+              
+   
+            }
+            .day {
+               .day-title {
+                  
+                
+                  
+                  h3 {
+                 
+                     font-size: 14px;
+                     line-height: 34px;
+                    
+                  }
+                  img {
+                     top:16px;
+                     right:22px;
+                  }
+                  .open {
+                     display: block;
+                  }
+                  .close {
+                     display: none;
+                  }
+                  
+               }
+               .day-text {
+                
+                  font-size: 14px;
+                  line-height: 27px;
+
+               }
+            }
+            
+            .day.active {
+               .day-title {
+                 
+                  .open {
+                  }
+                  .close {
+                  }
+               }
+               .day-text {
+               }
+            }
+   
+      }
+   }
+   .sidebar-wrp {
+  
+}
+.content__sidebar {
+
+   .calendar-card {
+      
+   
+  
+     
+      
+      max-width: 359px;
+     
+         
+
+   }
+   .calendar-add-block {
+      
+     
+      
+      .calendar-add {
+       
+      }
+
+   }
+   .sidebar__text-block {
+  
+      
+      
+      img {
+       
+      }
+      p {
+       
+      }
+   }
+   .dif {
+    
+      li {
+        
+         img {
+          
+         }
+
+      }
+   }
+   .sidebar__map {
+ 
+      .map {
+   
+      }
+     
+   }
+   .btn-wrapper {
+ 
+   }
+   .btn-sidebar {
+     
+      &:hover {
+          
+         
+      }
+    }
+
+}
+}
+
+@media (max-width: 750px) {  
+   .main-body {
+      margin-top: 32px;
+      margin-bottom: 32px;
+     
+      .section-title {
+         margin-top: 0px;
+      }
+      .main-body__content {
+         flex-direction: column;
+        
+            .content__days {
+               order: 0;
+   
+            }
+            .day {
+               .day-title {
+                  
+                
+                  
+                  h3 {
+                 
+                     font-size: 14px;
+                     line-height: 34px;
+                    
+                  }
+                  img {
+                   
+                  }
+                  .open {
+                     display: block;
+                  }
+                  .close {
+                     display: none;
+                  }
+                  
+               }
+               .day-text {
+                
+                  font-size: 14px;
+                  line-height: 27px;
+
+               }
+            }
+            
+            .day.active {
+               .day-title {
+                 
+                  .open {
+                  }
+                  .close {
+                  }
+               }
+               .day-text {
+               }
+            }
+   
+      }
+   }
+   .sidebar-wrp {
+  order: -1;
+  margin: 0 auto;
+}
+.content__sidebar {
+   margin-left: 0;
+   margin-right: 0;
+   .calendar-card {
+      
+      position: relative;
+   
+  
+     
+      
+      max-width: 359px;
+     
+         
+
+   }
+   .calendar-add-block {
+      
+     
+      
+      .calendar-add {
+       
+      }
+
+   }
+   .sidebar__text-block {
+  
+      
+      
+      img {
+       
+      }
+      p {
+       
+      }
+   }
+   .dif {
+    
+      li {
+        
+         img {
+          
+         }
+
+      }
+   }
+   .sidebar__map {
+ 
+      .map {
+   
+      }
+     
+   }
+   .btn-wrapper {
+ 
+   }
+   .btn-sidebar {
+     
+      &:hover {
+          
+         
+      }
+    }
+
+}
+}
+@media (max-width: 376px) {  
+
+   .main-body {
+      margin-top: 32px;
+     
+      .section-title {
+         margin-top: 0px;
+      }
+      .main-body__content {
+         flex-direction: column;
+        
+            .content__days {
+               order: 0;
+   
+            }
+            .day {
+               .day-title {
+                  
+                
+                  
+                  h3 {
+                 
+                     font-size: 14px;
+                     line-height: 34px;
+                    
+                  }
+                  img {
+                   
+                  }
+                  .open {
+                     display: block;
+                  }
+                  .close {
+                     display: none;
+                  }
+                  
+               }
+               .day-text {
+                
+                  font-size: 14px;
+                  line-height: 27px;
+
+               }
+            }
+            
+            .day.active {
+               .day-title {
+                 
+                  .open {
+                  }
+                  .close {
+                  }
+               }
+               .day-text {
+               }
+            }
+   
+      }
+   }
+   .sidebar-wrp {
+  order: -1;
+  margin: 0 auto;
+}
+.content__sidebar {
+   margin-left: 0;
+   margin-right: 0;
+   .calendar-card {
+      
+      position: relative;
+   
+  
+     
+      
+      max-width: 359px;
+     
+         
+
+   }
+   .calendar-add-block {
+      
+     
+      
+      .calendar-add {
+       
+      }
+
+   }
+   .sidebar__text-block {
+  
+      
+      
+      img {
+       
+      }
+      p {
+       
+      }
+   }
+   .dif {
+    
+      li {
+        
+         img {
+          
+         }
+
+      }
+   }
+   .sidebar__map {
+ 
+      .map {
+   
+      }
+     
+   }
+   .btn-wrapper {
+ 
+   }
+   .btn-sidebar {
+     
+      &:hover {
+          
+         
+      }
+    }
+
+}
 
 }

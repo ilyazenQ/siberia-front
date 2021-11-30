@@ -32,3 +32,24 @@ letter-spacing: 0.09em;
 color: #FFFFFF;
    }
 }
+@media (max-width: 750px) {  
+
+   .upper-main {
+      margin-top: 20px;
+      .upper-main__text {
+         max-width: 1184px;
+         font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 34px;
+   /* or 170% */
+   
+   text-align: left;
+   letter-spacing: 0.09em;
+   
+   color: #FFFFFF;
+   margin-bottom: 0px;
+      }
+   }
+}
