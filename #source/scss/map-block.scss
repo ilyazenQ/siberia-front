@@ -301,7 +301,8 @@ color: #11C2AD;
 
    .map-block {
       
-      display: block;
+      display: flex;
+      flex-direction: column;
       flex-wrap: nowrap;
       margin-top: 0px;
       
@@ -338,6 +339,7 @@ color: #11C2AD;
         
        }
        .map-block__menu {
+          order: 1;
           margin: 0 auto;
           width: 280px;
        }
@@ -405,7 +407,8 @@ color: #11C2AD;
    z-index: 1;
    display: block;
   
-   height: 1000px;
+   height: 400px;
+   margin-bottom: 30px;
    .main-map {
      
     position: absolute;
@@ -413,7 +416,7 @@ color: #11C2AD;
     transform: scale(1.8);
     width: 100%;
     height: 100%;
-    top:-10%;
+    top:-25%;
     left: -35%;
    //margin-top: 50px;
     //right: -46em;
@@ -430,7 +433,10 @@ color: #11C2AD;
 
    .map-block {
       
-      
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 0px;
       
       .search-input {
          
@@ -505,7 +511,7 @@ color: #11C2AD;
    z-index: 1;
    display: block;
   
-   height: 1000px;
+   height: 400px;
    .main-map {
      
     position: absolute;
@@ -513,7 +519,7 @@ color: #11C2AD;
     transform: scale(1.9);
     width: 100%;
     height: 100%;
-    top:-15%;
+    
     left: -35%;
    //margin-top: 50px;
     //right: -46em;
