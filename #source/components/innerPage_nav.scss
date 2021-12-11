@@ -1,0 +1,17 @@
+.page-nav {
+   margin-top: 10px;
+   
+   }
+   .page-nav__text {
+      a {
+      font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   letter-spacing: 0.12em;
+   color: #FFFFFF;
+   &:hover {
+      color: aqua;
+   }
+      }
+   }
