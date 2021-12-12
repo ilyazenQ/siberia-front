@@ -92,7 +92,8 @@ font-weight: 500;
             position: relative;
             .dropdown-menu {
                background:none;
-               
+               min-width: auto;
+               border: none;
                .dropdown-item {
                   
                   width: 20px;
