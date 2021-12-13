@@ -1,0 +1,252 @@
+.about-main__section-title {
+   .about-title{
+      padding: 0;
+   }
+
+.section-title{
+
+   margin-top: 32px;
+}
+
+}
+.about-main{
+
+   
+   .about-main__content {
+      margin-top: 32px;
+
+
+      .about-card {
+         display: flex;
+         text-align: start;
+         margin-bottom: 64px;
+         &:last-child{
+            margin-bottom: 20px;
+         }
+
+         .about-card__img {
+            margin-right: 24px;
+            
+            img {
+               width: 379px;
+               height: 311px;
+               border-radius: 10px;
+            }
+
+         }
+         .about-card__body {
+            h2 {
+               margin: 0;
+               
+               font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 34px;
+/* or 142% */
+
+letter-spacing: 0.09em;
+
+color: #FFFFFF;
+
+            }
+            h3{
+               margin: 0;
+               margin-bottom: 8px;
+               font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 34px;
+/* or 170% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.09em;
+font-variant: small-caps;
+
+color: #FFFFFF;
+            }
+            p{
+               margin: 0;
+               font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+text-align: justify;
+
+color: #FFFFFF;
+            }
+         }
+
+      }
+
+   }
+   
+.history {
+   margin-bottom: 52px;
+   .history-content {
+      margin-top: 32px;
+      font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 33px;
+/* or 183% */
+
+text-align: justify;
+letter-spacing: 0.09em;
+
+color: #FFFFFF;
+   }
+}
+}
+@media (max-width: 810px) {  
+   
+   .about-main{
+   
+      
+      .about-main__content {
+        
+   
+   
+         .about-card {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            margin-bottom: 64px;
+            &:last-child{
+               margin-bottom: 20px;
+            }
+   
+            .about-card__img {
+               margin-right: 0px;
+               
+               img {
+                  width: 379px;
+                  height: 311px;
+                  border-radius: 10px;
+               }
+   
+            }
+          
+   
+         }
+   
+      }
+      
+  
+   }
+
+ }
+ @media (max-width: 415px) {  
+   .about-main__section-title {
+      .about-title{
+         padding: 0;
+      }
+   
+   .section-title{
+   
+      margin-top: 32px;
+   }
+   
+   }
+   .about-main{
+   
+      
+      .about-main__content {
+         margin-top: 32px;
+   
+   
+         .about-card {
+            
+            margin-bottom: 34px;
+            &:last-child{
+               margin-bottom: 0px;
+            }
+   
+            .about-card__img {
+               margin-right: 24px;
+               
+               img {
+                  width: 345px;
+                  height: 311px;
+                  border-radius: 10px;
+               }
+   
+            }
+            .about-card__body {
+               h2 {
+                  margin: 0;
+                  
+                  font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 22px;
+   line-height: 34px;
+   /* or 142% */
+   
+   letter-spacing: 0.09em;
+   
+   color: #FFFFFF;
+   
+               }
+               h3{
+                  margin: 0;
+                  margin-bottom: 8px;
+                  font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 34px;
+   /* or 170% */
+   
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.09em;
+   font-variant: small-caps;
+   
+   color: #FFFFFF;
+               }
+               p{
+                  margin: 0;
+                  font-family: Roboto;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 30px;
+   /* or 167% */
+   
+   text-align: justify;
+   
+   color: #FFFFFF;
+               }
+            }
+   
+         }
+   
+      }
+      
+   .history {
+      margin-bottom: 52px;
+      .history-content {
+         margin-top: 32px;
+         font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 33px;
+   /* or 183% */
+   
+   text-align: justify;
+   letter-spacing: 0.09em;
+   
+   color: #FFFFFF;
+      }
+   }
+   }
+
+ }
