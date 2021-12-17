@@ -9,3 +9,10 @@
       margin-bottom: 52px;
    }
 }
+@media (max-width: 500px) {  
+   .single-blog { 
+      .section-title {
+         margin-top: 34px;
+      }
+   }
+}

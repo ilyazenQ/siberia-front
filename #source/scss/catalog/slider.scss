@@ -128,8 +128,9 @@ border-radius: 5px;
 }
  }
 
- @media (max-width: 376px) { 
+ @media (max-width: 511px) { 
    .slide-text-wrapper {
+      margin-top: 70px;
       
       }
       .slide-title {

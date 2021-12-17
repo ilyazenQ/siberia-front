@@ -8,12 +8,18 @@
 
    .first {
       border-radius: 5px 0px 0px 5px;
+      .dropdown-menu {
+         border-radius: 5px 0px 0px 5px;
+      }
    }
    .second {
 
    }
    .third {
       border-radius: 0px 5px 5px 0px;
+      .dropdown-menu {
+         border-radius: 0px 5px 5px 0px;
+      }
    }
    .dropdown {
       width: 290px;
@@ -120,8 +126,8 @@ color: #FFFFFF;
 // content-cards
 .content-cards {
    display: flex;
-   //justify-content: flex-start;
-   justify-content: space-around;
+   justify-content: flex-start;
+  // justify-content: space-around;
    flex-wrap: wrap;
    margin-left:48px;
    margin-right:24px;
@@ -279,7 +285,7 @@ margin-bottom: 8px;
  position: relative;
 
    p {
-   font-family: Montserrat;
+   font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -432,7 +438,7 @@ height: 5px;
    }
 
    .content-cards {
-    
+      justify-content: space-around;
        .calendar-card {
          a {
             text-decoration: none;

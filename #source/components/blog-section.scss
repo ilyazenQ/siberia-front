@@ -92,7 +92,7 @@ line-height: 10px;
 /* or 400% */
 
 
-letter-spacing: 0.585em;
+letter-spacing: 0.17em;
 text-transform: uppercase;
 
 color: #FFFFFF;
@@ -163,6 +163,9 @@ color: #FFFFFF;
 }
 
 @media (max-width: 601px) {  
+   .section-title.blog-section__section-title {
+      margin-top: 24px;
+   }
 
    .blog-section{
       margin-left: 0px;

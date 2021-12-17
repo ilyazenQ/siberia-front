@@ -39,10 +39,10 @@ color: #FFFFFF;
    .btn-disc {
       width: auto;
       height: 60px;
-      left: 462px;
-      top: 2311px;
       
-      font-family: Yinmar,sans-serif;
+      padding-left:60px;
+      padding-right:60px;
+      font-family: Roboto;
       font-style: normal;
       font-weight: normal;
       font-size: 24px;
@@ -68,13 +68,13 @@ color: #FFFFFF;
 
    .discover {
       height: auto;
-      padding-top: 60px;
+      padding-top: 54px;
       
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
       .discover__title {
-         margin-top: 10px;
+         margin-top: 42px;
          width: 100%;
          display: flex;
          justify-content: center;
@@ -101,13 +101,14 @@ color: #FFFFFF;
          width: 100%;
          margin: 0 auto;
          text-align: center;
-         margin-top: 48px;
+         margin-top: 24px;
          margin-bottom: 84px;
       }
       .btn-disc {
          width: auto;
          height: 40px;
-         
+         padding-left:30px;
+      padding-right:30px;
          
          font-family: Roboto;
          font-style: normal;

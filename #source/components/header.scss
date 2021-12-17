@@ -98,7 +98,7 @@ font-weight: 500;
            background-repeat: no-repeat;
            background-position-x: 100%;
            background-position-y: 25%;
-            padding-right: 10px;
+            padding-right: 13px;
 
          }
          a{
@@ -504,7 +504,10 @@ letter-spacing: 0.1em;
       }
       .social-block {
          .social-link{
-            margin-left: 10px;
+            margin-left: 20px;
+            &:first-child {
+               margin-left: 0px;
+            }
          }
       }
       .lang-block {
