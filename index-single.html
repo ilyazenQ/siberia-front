@@ -779,7 +779,9 @@
           <div> <a class="offcanvas-item" href="/index-contact.html">Контакты</a></div>
     </div>
      <div class="offcanvas-social">
-      <button type="button" class="btn btn-req btn-outline-secondary">
+      <button type="button" class="btn btn-req btn-outline-secondary"
+      data-bs-dismiss="offcanvas" aria-label="Закрыть"
+      data-bs-toggle="modal" data-bs-target="#exampleModal">
         ОСТАВИТЬ ЗАЯВКУ
      </button>
      <div class="social-icon">
@@ -797,6 +799,43 @@
 
    </div>
  </div>
+
+
+ <!-- Модальное окно -->
+<div class="modal fade modal-first" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+
+    <form name="modal-form" method="post">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__close">
+          <button type="button" class="btn modal-close" style="background-image: url('/img/icons/Plus +.png');" data-bs-dismiss="modal" aria-label="Закрыть">
+          </button>
+        </div>
+        <h5 class="modal-title" id="exampleModalLabel">ЗАЯВКА НА ТУР</h5>
+        
+      </div>
+      <div class="modal-body">
+
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="Телефон">
+        <input type="email" placeholder="E-mail">
+        <input type="number" placeholder="Количество туристов">
+        <textarea placeholder="Дополнительно" rows="3"></textarea>
+        <p class="polit">
+          Нажимая на кнопку, я даю согласие на обработку моих персональных данных согласно <a href="" class="my-link"> политике компании </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-req btn-outline-secondary">
+          ОСТАВИТЬ ЗАЯВКУ
+       </button>      
+    </div>
+    </form>
+
+  </div>
+</div>
+
 <script src="https://unpkg.com/scrollbooster@3/dist/scrollbooster.min.js"></script>
 <script src="js/slider-opt.js"></script>
 <script src="js/single-day.js"></script>

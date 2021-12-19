@@ -87,7 +87,7 @@
         </div>
 
         <div class="down-nav__block-button">
-           <button type="button" class="btn btn-req btn-outline-secondary">
+           <button type="button" class="btn btn-req btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               ОСТАВИТЬ ЗАЯВКУ
            </button>
            <button type="button" class="my-btn btn-canv" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -470,7 +470,9 @@ Ut dapibus diam sed odio rhoncus, eu dictum ex ultricies. Vestibulum ante ipsum 
           <div> <a class="offcanvas-item" href="/index-contact.html">Контакты</a></div>
     </div>
      <div class="offcanvas-social">
-      <button type="button" class="btn btn-req btn-outline-secondary">
+      <button type="button" class="btn btn-req btn-outline-secondary"
+      data-bs-dismiss="offcanvas" aria-label="Закрыть"
+      data-bs-toggle="modal" data-bs-target="#exampleModal">
         ОСТАВИТЬ ЗАЯВКУ
      </button>
      <div class="social-icon">
@@ -487,7 +489,44 @@ Ut dapibus diam sed odio rhoncus, eu dictum ex ultricies. Vestibulum ante ipsum 
      </div>
 
    </div>
- </div><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+ </div>
+
+
+ <!-- Модальное окно -->
+<div class="modal fade modal-first" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+
+    <form name="modal-form" method="post">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__close">
+          <button type="button" class="btn modal-close" style="background-image: url('/img/icons/Plus +.png');" data-bs-dismiss="modal" aria-label="Закрыть">
+          </button>
+        </div>
+        <h5 class="modal-title" id="exampleModalLabel">ЗАЯВКА НА ТУР</h5>
+        
+      </div>
+      <div class="modal-body">
+
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="Телефон">
+        <input type="email" placeholder="E-mail">
+        <input type="number" placeholder="Количество туристов">
+        <textarea placeholder="Дополнительно" rows="3"></textarea>
+        <p class="polit">
+          Нажимая на кнопку, я даю согласие на обработку моих персональных данных согласно <a href="" class="my-link"> политике компании </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-req btn-outline-secondary">
+          ОСТАВИТЬ ЗАЯВКУ
+       </button>      
+    </div>
+    </form>
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/scrollbooster@3/dist/scrollbooster.min.js"></script>
 <script src="js/single-day.js"></script>
