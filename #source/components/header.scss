@@ -50,6 +50,12 @@ header {
       .social-block {
          .social-link{
             margin-left: 30px;
+            img {
+               &:hover {
+                  transform: scale(1.2);
+               }
+            }
+            
          }
       }
       .lang-block {
@@ -57,11 +63,15 @@ header {
          font-family: Roboto;
 font-style: normal;
 font-weight: 500;
+.btn:focus, .btn:active {
+   box-shadow: none !important;
+ }
          .dropdown-toggle::after {
             content: none;
             
             
          }
+         
          
          .dropdown {
             position: relative;
@@ -69,14 +79,18 @@ font-weight: 500;
                background:none;
                min-width: auto;
                border: none;
+              
                .dropdown-item {
-                  
-                  width: 20px;
+                  background-color: rgb(17,194,173);
+
+                  width: 24px;
                    padding: 0;
                    margin: 0;
+                   padding-left: 2px;
+                   
                }
                .dropdown-item:hover {
-                  background: none;
+                  
                }
             }
             .dropdown-menu.show {
