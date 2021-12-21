@@ -20,7 +20,15 @@
     position: sticky;
     bottom:200px;
     left:95%;
-   
+    img {
+      display: inline;
+      max-width: 40px;
+      max-height: 40px;
+      opacity: 50%;
+      &:hover {
+         opacity: 100%;
+      }
+   }
       cursor: pointer;
     //  float: right;
    }

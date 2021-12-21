@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-catalog', {
   loop:true,
   spaceBetween: 30,
   centeredSlides: true,
@@ -22,3 +22,19 @@ const swiper = new Swiper('.swiper', {
     }
   },
 });
+
+const swiperSingle = new Swiper('.swiper-single', {
+  loop:true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
+

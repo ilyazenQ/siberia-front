@@ -33,6 +33,9 @@ letter-spacing: 0.09em;
 color: #FFFFFF;
 a {
    color: #FFFFFF;
+   &:hover {
+      color: rgb(18,89,81);
+   }
 
 }
 
@@ -60,6 +63,9 @@ a {
          img {
             width: 60px;
             height: 60px;
+            &:hover {
+               transform: scale(1.1);
+            }
          }
       }
    }
