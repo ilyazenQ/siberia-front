@@ -3,11 +3,22 @@
    .blog-main__card-wrapper {
 
    }
+   .report._animate {
+      .report-text__title {
+         text-decoration: underline;
+      }
+   }
    .blog-main__card  {
       margin-top: 64px;
       display: flex;
+      
       .report {
          display: flex;
+         &:hover {
+            .report-text__title {
+               text-decoration: underline;
+            }
+         }
          .blog-card__img {
             width: 379px;
             height: 288px;

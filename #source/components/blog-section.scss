@@ -18,6 +18,13 @@
       justify-content: space-between;
       margin-top: -20px;
       .add-card-wrap {
+         .blog-inner__add-card._animate {
+            h2{
+            text-decoration: underline;
+            }
+         }
+      }
+      .add-card-wrap {
          width: 379px;
          .blog-inner__add-card {
             padding-bottom: 5px;
@@ -41,7 +48,15 @@
          display: flex;
          justify-content: space-between;
       }
-
+      .blog-inner__main-card._animate {
+         .main-card__title {
+            text-decoration: underline;
+         }
+         .main-card__img {
+            
+            background-size: 105%;
+         }
+      }
       .blog-inner__main-card {
          
       border-radius: 5px;

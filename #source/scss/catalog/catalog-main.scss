@@ -134,6 +134,15 @@ color: #FFFFFF;
    
  // margin-right:48px;
     // CARD START
+    .calendar-card._animate {
+      .calendar-card_img-block {
+         opacity: 1;
+         p { 
+         box-shadow: inset 147px 0 0 0 rgba(17, 194, 173, 1);
+         color: #fff;
+         }
+      }
+    }
     .calendar-card {
       a {
          text-decoration: none;
@@ -230,7 +239,7 @@ color: #FFFFFF;
       opacity: 85%;
       
       
-      background-image: url(/img/ci.png);
+      background-image: url(/img/cn2.png);
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;

@@ -192,7 +192,7 @@ letter-spacing: 0.1em;
 }
 .modal-first {
    .modal-dialog {
-      
+     
    }
    .modal-content {
       background: #045651;
@@ -346,16 +346,19 @@ a {
       }
    }
 }
-@media (max-width: 475px) {  
+@media (max-width: 600px) {  
    .modal-first {
+      
       .modal-dialog {
+         margin: 0;
+         justify-content: center;
          
       }
       .modal-content {
          background: #045651;
          box-shadow: 4px 4px 15px 2px rgba(55, 55, 55, 0.52);
          border-radius: 5px;
-         width: 350px;
+         width: 340px;
          .modal-header {
            
             border: none;

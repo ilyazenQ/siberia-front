@@ -181,6 +181,11 @@ color: #FFFFFF;
 
       }
    }
+   .sidebar__map._animate {
+      .map {
+         background-size: 11%, cover;
+      }
+   }
    .sidebar__map {
       margin-top: 40px;
       margin-left: 9px;
@@ -210,6 +215,10 @@ color: #FFFFFF;
       width: 100%;
       display: flex;
       justify-content: center;
+   }
+   .btn-sidebar._animate {
+      box-shadow: inset 277px 0 0 0 rgba(17, 194, 173, 1);
+            color: #fff;
    }
    .btn-sidebar {
       text-align: center;
