@@ -1,0 +1,47 @@
+.page__pagination.navigation.pagination {
+   justify-content: flex-end !important;
+   margin-top: 40px;
+   .pag-wrapper.nav-links {
+      margin-left: 5px;
+      display: flex !important;
+      
+   }
+   .page-numbers {
+      text-decoration: none;
+      cursor: pointer;
+      margin-right: 24px;
+      font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height, or 111% */
+
+letter-spacing: 0.09em;
+
+color: #FFFFFF;
+
+   }
+   .current{
+      font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height, or 111% */
+
+letter-spacing: 0;
+text-decoration-line: underline;
+
+color: #FFFFFF;
+   }
+   .page-numbers.next {
+      margin-right: 0;
+      img { 
+         margin-left: -5px;
+      width: 15px;
+height: 15px;
+}
+   }
+  
+}

@@ -52,6 +52,11 @@
      transform: scale(2.4);
 
    }
+   .compas-arrow {
+    transform-box: fill-box;
+    transform-origin:15% 79%;
+    transform:rotate(360deg);
+   }
 }
 @media (max-width: 1000px) {   
 

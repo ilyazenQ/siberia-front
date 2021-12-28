@@ -120,10 +120,10 @@ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
    div {
       height: 40px;
       &:first-child {
-         border-top: 0.01px solid #FFFFFF;
-         border-bottom: 0.01px solid #FFFFFF;
+         border-top: 0.01px solid rgb(255, 255, 255,0.5);
+         border-bottom: 0.01px solid rgb(255, 255, 255,0.5);;
       }
-      border-bottom: 0.01px solid #FFFFFF;
+      border-bottom: 0.01px solid rgb(255, 255, 255,0.5);;
       
    .offcanvas-item {
       
