@@ -25,10 +25,10 @@ const swiper = new Swiper('.swiper-catalog', {
 
 const swiperSingle = new Swiper('.swiper-single', {
   loop:true,
-  spaceBetween: 30,
+  spaceBetween: 50,
   centeredSlides: true,
   autoplay: {
-    delay: 10000,
+    delay: 7000,
     disableOnInteraction: false,
   },
   pagination: {

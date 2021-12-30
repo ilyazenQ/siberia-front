@@ -1,0 +1,142 @@
+#preloader {
+ 
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #ffffff;
+   z-index: 10000;
+
+   $antlersLength: 699;
+$faceLength: 1413;
+$noseLength: 107;
+$duration: 5s;
+$count: infinite;
+
+@mixin animate($strokeLength, $name, $duration) {
+  stroke-dashoffset: -($strokeLength);
+  stroke-dasharray: $strokeLength;
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $count;
+}
+
+@mixin draw($start, $finish) {
+  from {
+    stroke-dashoffset: $start;
+  }
+  to {
+    stroke-dashoffset: $finish;
+  } 
+}
+
+@mixin fill($color1, $color2) {
+  from {
+    fill: $color1;
+  }
+  to {
+    fill: $color2;
+  }
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.antlers {
+  stroke: #0c0701;
+  @include animate($antlersLength, antlers, $duration);
+}
+
+.face {
+  stroke: #58534D;
+  animation: face $duration $count;
+}
+.nose {
+  stroke: #130908;
+  @include animate($noseLength, nose, $duration);
+}
+.eyes {
+  stroke: #ffffff;
+  animation: eyes $duration $count;
+}
+
+.eyesFill {
+  fill: #ffffff;
+  animation: eyesInside $duration $count;
+}
+
+g {
+  fill: #ffffff;
+  animation: faceInside $duration $count;
+}
+
+@keyframes antlers {
+  @include draw($antlersLength, 0);
+}
+
+@keyframes face {
+  from {
+    stroke: white;
+  }
+  to {
+    stroke: black;
+  }
+}
+
+@keyframes nose {
+  @include draw($noseLength, 0);
+}
+
+@keyframes faceInside {
+  @include fill(#ffffff, #593520)
+}
+
+@keyframes eyesInside {
+  @include fill(#ffffff, #1E9AA8)
+}
+@keyframes eyes {
+  from {
+    stroke: #ffffff;
+  }
+  to {
+    stroke: #090a0a;
+  }
+}
+}
+#preloader.hide-preloader {
+   animation: hidePreloader 1s;
+}
+
+#preloader.preloader-hidden {
+   display: none;
+}
+@keyframes changeTextColor {
+   0% {
+       color:red;
+   }
+   20% {
+
+   }
+   100% {
+       opacity: 0;
+   }
+}
+
+@keyframes hidePreloader {
+   0% {
+       opacity: 1;
+   }
+   100% {
+       opacity: 0;
+   }
+}
