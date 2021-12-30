@@ -11,7 +11,10 @@
    .blog-main__card  {
       margin-top: 64px;
       display: flex;
-      
+      .link-to-blog {
+         color:white;
+         text-decoration: none;
+      }
       .report {
          display: flex;
          &:hover {

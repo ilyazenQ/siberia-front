@@ -81,7 +81,7 @@ font-weight: 500;
                border: none;
               
                .dropdown-item {
-                  background-color: rgb(17,194,173);
+                  background-color: none;
 
                   width: 24px;
                    padding: 0;
@@ -90,7 +90,7 @@ font-weight: 500;
                    
                }
                .dropdown-item:hover {
-                  
+                  background-color: rgb(17,194,173);
                }
             }
             .dropdown-menu.show {
@@ -108,10 +108,16 @@ font-weight: 500;
             border: none;
             background:none;
             
-            background-image: url(/img/icons/r.png);
-           background-repeat: no-repeat;
-           background-position-x: 100%;
-           background-position-y: 25%;
+            span {
+               position: relative;
+               img {
+                  position: absolute;
+                  top:10%;
+                  left: 2px;
+                  width: 7px;
+                  height: 4px;
+               }
+            }
             padding-right: 13px;
 
          }

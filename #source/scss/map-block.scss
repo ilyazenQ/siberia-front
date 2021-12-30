@@ -2,23 +2,21 @@
    z-index: 4;
 }
 .map-block {
-  
    position: relative;
    display: flex;
    flex-wrap: nowrap;
    margin-top: 30px;
    z-index: 10;
    .search-input {
-      border:none;
-      margin-bottom: 15px;
-     padding-left: 35px;
-     width: 261px;
-     height: 29px;
-     margin-top: 5px;
-     
-      font-family: Montserrat;
-      font-weight: 300;
-      font-size: 14px;
+   border:none;
+   margin-bottom: 15px;
+   padding-left: 35px;
+   width: 261px;
+   height: 29px;
+   margin-top: 5px;
+   font-family: Montserrat;
+   font-weight: 300;
+   font-size: 14px;
 font-style: normal;
 font-weight: 300;
 line-height: 40px;
