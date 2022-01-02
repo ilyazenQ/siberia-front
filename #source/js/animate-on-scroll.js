@@ -1,7 +1,3 @@
-
-
-
-
 let animItems = document.querySelectorAll('.anim-items');
 if(animItems.length > 0 && window.screen.width < 800) {
    window.addEventListener('scroll',animOnScroll);
