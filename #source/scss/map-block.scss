@@ -2,6 +2,12 @@
    z-index: 4;
 }
 .map-block {
+
+   .hidden {
+      
+      display: none;
+   }
+
    position: relative;
    display: flex;
    flex-wrap: nowrap;
@@ -155,33 +161,61 @@ color: #11C2AD;
    
   
    height: 1600px;
+   
    .main-map {
-      @font-face { font-family:"Book Antiqua";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-    .str4 {stroke:#888888;stroke-width:77.1;stroke-miterlimit:22.9256}
-    .str1 {stroke:#99FFFF;stroke-width:77.1;stroke-miterlimit:22.9256}
-    .str0 {stroke:#E6E6E6;stroke-width:77.1;stroke-miterlimit:22.9256}
-    .str2 {stroke:#E6E6E6;stroke-width:77.1;stroke-miterlimit:22.9256}
-    .str3 {stroke:#99FFFF;stroke-width:171.4;stroke-miterlimit:22.9256}
-    .str6 {stroke:aqua;stroke-width:226.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
-    .str5 {stroke:#99FFFF;stroke-width:226.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
-    .fil0 {fill:none}
-    .fil1 {fill:none;fill-rule:nonzero}
-    .fil3 {fill:aqua}
-    .fil2 {fill:aqua;fill-rule:nonzero}
-    .fnt1 {font-weight:bold;font-size:2419px;font-family:'Book Antiqua'}
-    .fnt2 {font-weight:bold;font-size:2721.4px;font-family:'Book Antiqua'}
-    .fnt0 {font-weight:bold;font-size:3023.8px;font-family:'Book Antiqua'}
-      
     
+
+      @font-face { font-family:"Book Antiqua";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+      .str4 {stroke:#888888;stroke-width:77.1;stroke-miterlimit:22.9256}
+      .str1 {stroke:#99FFFF;stroke-width:77.1;stroke-miterlimit:22.9256}
+      .str0 {stroke:#E6E6E6;stroke-width:77.1;stroke-miterlimit:22.9256}
+      .str2 {stroke:#E6E6E6;stroke-width:77.1;stroke-miterlimit:22.9256}
+      .str3 {stroke:#99FFFF;stroke-width:171.4;stroke-miterlimit:22.9256}
+      .str6 {stroke:aqua;stroke-width:226.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+      .str5 {stroke:#99FFFF;stroke-width:226.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+      .fil0 {fill:none}
+      .fil1 {fill:none;fill-rule:nonzero}
+      .fil3 {fill:aqua}
+      .fil2 {fill:aqua;fill-rule:nonzero}
+      .fnt1 {font-weight:bold;font-size:2419px;font-family:'Book Antiqua'}
+      .fnt2 {font-weight:bold;font-size:2721.4px;font-family:'Book Antiqua'}
+      .fnt0 {font-weight:bold;font-size:3023.8px;font-family:'Book Antiqua'}
+
     position: absolute;
     width: 120%;
     height: 100%;
     top:-35%;
     left: -15%;
     //right: -46em;
-    
-    
-  
+   }
+   .add-map {
+      
+
+      position: absolute;
+      width: 70%;
+      height: 100%;
+      top:-30%;
+      left: 30%;
+   }
+   .yakutia-map {
+      @font-face { font-family:"Book Antiqua";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+      .str1 {stroke-width:15.1;stroke-miterlimit:22.9256}
+      .str3 {stroke:white;stroke-width:121.9;stroke-miterlimit:22.9256}
+      .str0 {stroke:white;stroke-width:73.6;stroke-miterlimit:22.9256}
+      .str2 {stroke:white;stroke-width:76.2;stroke-miterlimit:22.9256}
+      .fil2 {fill:none}
+      .fil1 {fill:white}
+      .fil4 {fill:aqua;fill-rule:nonzero}
+      .fil3 {fill:white;fill-rule:nonzero}
+      .fil0 {fill:url(#id0)}
+      .fil5 {fill:url(#id1);fill-rule:nonzero}
+      .fil8 {fill:url(#id2);fill-rule:nonzero}
+      .fil9 {fill:url(#id3);fill-rule:nonzero}
+      .fil10 {fill:url(#id4);fill-rule:nonzero}
+      .fil6 {fill:url(#id5);fill-rule:nonzero}
+      .fil7 {fill:url(#id6);fill-rule:nonzero}
+      .fnt1 {font-weight:normal;font-size:5050px;font-family:'Book Antiqua'}
+      .fnt0 {font-weight:normal;font-size:5050.3px;font-family:'Book Antiqua'}
    }
 }
 @media (max-width: 1256px) { 
@@ -419,14 +453,14 @@ color: #11C2AD;
 
  .map-block__map {
    z-index: 1;
-   display: block;
+   
   
    height: 400px;
    margin-bottom: 30px;
    .main-map {
      
     position: absolute;
-    display: block;
+    
     transform: scale(1.8);
     width: 100%;
     height: 100%;
@@ -437,6 +471,13 @@ color: #11C2AD;
     
     
   
+   }
+   .add-map {
+      position: absolute;
+      width: 85%;
+      height: 100%;
+      top:-25%;
+      left: 10%;
    }
 }
 
@@ -523,13 +564,13 @@ color: #11C2AD;
 
  .map-block__map {
    z-index: 1;
-   display: block;
+   
   
    height: 400px;
    .main-map {
      
     position: absolute;
-    display: block;
+    
     transform: scale(1.9);
     width: 100%;
     height: 100%;
@@ -540,6 +581,13 @@ color: #11C2AD;
     
     
   
+   }
+   .add-map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:-25%;
+      left: 0%;
    }
 }
 }

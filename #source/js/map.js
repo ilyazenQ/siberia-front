@@ -12,19 +12,26 @@ accordionInMap.addEventListener('click', function(e){
   }
 }
 );
+const yakutiaLeft = document.querySelector(".yak-left");
+const yakutuaMap = document.querySelector(".yakutia-map");
+const mainMap = document.querySelector(".main-map");
+yakutiaLeft.addEventListener('click',function (e) {
+  mainMap.classList.toggle('hidden');
+  yakutuaMap.classList.toggle('hidden');
+});
 
-const compas = document.querySelector('.compas-svg'),
-compasKamchatka = document.querySelector('.kamchatka'),
-compasMongolia = document.querySelector('.mongolia'),
-compasArrow = document.querySelector('.compas-arrow');
-let deg = 0;
-function moveTheArrow(deg) {
-  compasArrow.style.transform = `rotate(${deg}deg)`;
-}
-setInterval(() => {
-  moveTheArrow(deg);
-  deg++;
-},40)
+//const compas = document.querySelector('.compas-svg'),
+//compasKamchatka = document.querySelector('.kamchatka'),
+//compasMongolia = document.querySelector('.mongolia'),
+//compasArrow = document.querySelector('.compas-arrow');
+//let deg = 0;
+//function moveTheArrow(deg) {
+//  compasArrow.style.transform = `rotate(${deg}deg)`;
+//}
+//setInterval(() => {
+//  moveTheArrow(deg);
+//  deg++;
+//},40)
 
 //compasMongolia.addEventListener('mouseenter', function(e){
   

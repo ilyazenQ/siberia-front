@@ -1,3 +1,5 @@
+
+
 // animate-on-scroll
 let animItems = document.querySelectorAll('.anim-items');
 if(animItems.length > 0 && window.screen.width < 800) {
@@ -35,7 +37,42 @@ if(animItems.length > 0 && window.screen.width < 800) {
 }
 // calendar.js
 let calendar = document.querySelectorAll('.calendar-body');
-if(calendar.length > 0 && window.screen.width > 1024)
+if(calendar.length > 0) {
+//overflow-initial for html
+
+  window.addEventListener('scroll',addOverflowToHtml);
+  function addOverflowToHtml() {
+
+        let htmlSelector = document.documentElement;
+        let calendarWrapper = document.querySelector('.calendar-wrapper');
+        const calendarHeight = calendarWrapper.offsetHeight;
+        const calendarOffset = offset(calendarWrapper).top;
+        const calendarStart = 8;
+
+        let calendarPiont = window.innerHeight - calendarHeight / calendarStart;
+
+        if(calendarHeight > window.innerHeight) {
+           let calendarPiont = window.calendarHeight - window.calendarHeight / calendarStart;
+        }
+
+        if((pageYOffset > calendarOffset - calendarPiont) && pageYOffset < (calendarOffset + calendarHeight)) {
+          htmlSelector.classList.add("overflow-initial");
+        } else {
+          htmlSelector.classList.remove("overflow-initial");
+        }
+     
+     function offset(el) {
+        const rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return {top:rect.top + scrollTop, left:rect.left + screenLeft}
+     }
+
+  
+}
+
+
+if(window.screen.width > 1024) 
 {
   new ScrollBooster({
   viewport: document.querySelector('.calendar-body'),
@@ -43,6 +80,7 @@ if(calendar.length > 0 && window.screen.width > 1024)
  scrollMode: 'native',
   direction: 'horizontal'
  });
+}
 
  let rightMoverArr = document.querySelectorAll('.calendar-move-right');
  let calendarBody = document.querySelector('.calendar-body');
@@ -70,10 +108,11 @@ function scrollBody() {
 });
 }
 }
-// single-day.js
-let isSingle = document.querySelectorAll('.content__days');
 
-if(isSingle.length > 0) {
+// single-day.js
+let isSingleTour = document.querySelectorAll('.content__days');
+let isSingleBlog = document.querySelectorAll('.single-blog');
+if(isSingleTour.length > 0 || isSingleBlog.length > 0) {
 const  days = document.querySelectorAll('.day')
 const  daysWrapper = document.querySelector('.content__days')
 function openClose(el) {

@@ -10,7 +10,9 @@
 @import "inter-compass";
 
 
-
+.overflow-initial {
+  overflow-x: initial;
+}
 .container {
   max-width: 1184px;
   overflow: hidden;
@@ -25,15 +27,18 @@
 }
 html {
   max-width: 100%;
-  //overflow-x: hidden;
+ overflow-x: hidden;
   &::-webkit-scrollbar {
     display: none;
   }
 }
+
 body {
   background: linear-gradient(180deg, #02201C 21.88%, #06443D 35.94%, rgba(9, 102, 91, 0.893633) 81.06%, #11C2AD 96.03%);  position: relative;
   max-width: 100%;
-  //overflow-x: hidden;
+ 
+    
+ overflow-x: hidden;
   &::-webkit-scrollbar {
     display: none;
   }

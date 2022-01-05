@@ -1,94 +1,9 @@
 
-
-<div class="scout-wrapper">
-
-<section class="scout" style="background-image: url(/img/sb.png);">  
-   <div class="container">
-      <div class="section-title">
-         <div class="section-title__left">
-         <div class="section-title__img">
-            <img src="/img/icons/s.svg"
-            alt="Wind">
-         </div>
-         <div class="section-title__text">
-            <h4>
-               Новое и неизведанное
-            </h4>
-         </div>
-      </div>
-      <a href="" class="my-link">
-         <div class="section-title__show-more show-more">
-            <p class="show-more__text">
-               больше туров
-            </p>
-            <img src="/img/icons/ar.svg"
-            alt="Arrow" class="show-more__img">
-         </div>
-      </a>
-   
-      </div>
-      <div class="section-body__main-title">
-         <h2>
-            ПОЙДЕМ В РАЗВЕДКУ С НАМИ
-         </h2>
-      </div>
-   </div>
-<div class="overflow-wrapper container scout-body">
-   
-   <div class="scout-inner">
-      
-      <ul class="scout-list">
-         <li class="scout-item">
-               <p>
-                  Имеется спорная точка зрения, гласящая примерно следующее: стремящиеся вытеснить традиционное производство, нанотехнологии неоднозначны и будут объединены в целые кластеры себе подобных.
-               </p>
-         </li>
-
-         <li class="scout-item">
-               <p>
-                  Повседневная практика показывает, что современная методология разработки представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений.
-               </p>
-            
-         </li>
-
-         <li class="scout-item">
-               <img src="/img/icons/d.png" alt="" >
-               <p>
-                  Повседневная практика показывает, что современная методология разработки представляет собой. азработки представляет собой. 
-               </p>
-         </li>
-
-         <li class="scout-item">
-               <img src="/img/icons/d.png" alt="" >
-               <p>
-                  Повседневная практика показывает, что современная методология разработки представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений.
-                  Повседневная практика показывает, что современная методология разработки представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений.
-
-               </p>
-
-         </li>
-         <li class="scout-item">
-            <img src="/img/icons/d.png" alt="" >
-            <p>
-               Повседневная практика показывает, что современная методология разработки представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений.
-               Повседневная практика показывает, что современная методология разработки представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений.
-
-            </p>
-
-      </li>
-      </ul>
-   </div>
-      <div class="overflow-wrapper container compas">
-      
-
-
-
-         
 <!-- Creator: CorelDRAW 2021 (64-Bit) -->
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="135mm" height="134mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 135000 134000"
  xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" class="compas-svg">
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
  <defs>
   <font id="FontID0" horiz-adv-x="549" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="700">
 	<font-face 
@@ -201,12 +116,3 @@ viewBox="0 0 135000 134000"
   </g>
  </g>
 </svg>
-
-         
-      
-      </div>
-</div>
-
-</section>
-
-</div>

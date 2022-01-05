@@ -1,40 +1,39 @@
 .compas {
 
-   @font-face { font-family:"Consolas";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-   .str16 {stroke:#CCFFCC;stroke-width:1000;stroke-miterlimit:22.9256}
-   .str1 {stroke:#339966;stroke-width:2000;stroke-miterlimit:22.9256}
-   .str3 {stroke:#33CC99;stroke-width:750;stroke-miterlimit:22.9256}
-   .str2 {stroke:#003333;stroke-width:6000;stroke-miterlimit:22.9256}
-   .str0 {stroke:#339966;stroke-width:200;stroke-miterlimit:22.9256}
-   .str18 {stroke:#99CC99;stroke-width:200;stroke-miterlimit:22.9256}
-   .str17 {stroke:#CCFFCC;stroke-width:200;stroke-miterlimit:22.9256}
-   .str6 {stroke:#33CC99;stroke-width:1512.3;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str14 {stroke:#003333;stroke-width:1206.5;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str19 {stroke:#003333;stroke-width:1206.5;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str12 {stroke:#33CC99;stroke-width:1206.5;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str15 {stroke:#003333;stroke-width:1206.9;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str13 {stroke:#33CC99;stroke-width:1206.9;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str10 {stroke:#33CC99;stroke-width:1541.9;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str11 {stroke:#33CC99;stroke-width:1542.6;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str4 {stroke:#33CC99;stroke-width:1517.1;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str5 {stroke:#33CC99;stroke-width:1517.3;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str7 {stroke:#33CC99;stroke-width:1547.8;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str8 {stroke:#33CC99;stroke-width:1504;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .str9 {stroke:#33CC99;stroke-width:1504.1;stroke-linejoin:round;stroke-miterlimit:22.9256}
-   .fil0 {fill:none}
-   .fil7 {fill:#003333}
-   .fil8 {fill:#003333}
-   .fil1 {fill:#339966}
-   .fil3 {fill:#33CC99}
-   .fil6 {fill:#99CC99}
-   .fil2 {fill:#CCFFCC}
-   .fil5 {fill:white}
-   .fil4 {fill:white;fill-rule:nonzero}
-   .fil9 {fill:white;fill-rule:nonzero}
-   .fnt0 {font-weight:bold;font-size:6349.9px;font-family:'Consolas'}
+  
+    @font-face { font-family:"Consolas";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .str14 {stroke:#CCFFCC;stroke-width:1000;stroke-miterlimit:22.9256}
+    .str1 {stroke:#339966;stroke-width:2000;stroke-miterlimit:22.9256}
+    .str3 {stroke:#33CC99;stroke-width:750;stroke-miterlimit:22.9256}
+    .str2 {stroke:#003333;stroke-width:6000;stroke-miterlimit:22.9256}
+    .str0 {stroke:#339966;stroke-width:200;stroke-miterlimit:22.9256}
+    .str16 {stroke:#99CC99;stroke-width:200;stroke-miterlimit:22.9256}
+    .str15 {stroke:#CCFFCC;stroke-width:200;stroke-miterlimit:22.9256}
+    .str6 {stroke:#33CC99;stroke-width:1512.3;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str17 {stroke:#003333;stroke-width:1206.5;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str12 {stroke:#33CC99;stroke-width:1206.5;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str18 {stroke:#003333;stroke-width:1206.9;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str13 {stroke:#33CC99;stroke-width:1206.9;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str10 {stroke:#33CC99;stroke-width:1541.9;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str11 {stroke:#33CC99;stroke-width:1542.6;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str4 {stroke:#33CC99;stroke-width:1517.1;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str5 {stroke:#33CC99;stroke-width:1517.3;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str7 {stroke:#33CC99;stroke-width:1547.8;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str8 {stroke:#33CC99;stroke-width:1504;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str9 {stroke:#33CC99;stroke-width:1504.1;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil6 {fill:#003333}
+    .fil1 {fill:#339966}
+    .fil3 {fill:#33CC99}
+    .fil7 {fill:#99CC99}
+    .fil2 {fill:#CCFFCC}
+    .fil5 {fill:white}
+    .fil4 {fill:white;fill-rule:nonzero}
+    .fnt0 {font-weight:bold;font-size:6349.9px;font-family:'Consolas'}
+  
    
   display: flex;
-   margin-bottom: 140px;
+   margin-bottom: 0px;
    width: 110%;
   //position: relative;
    //width: 600px;
@@ -44,12 +43,12 @@
    
    svg {
       padding-top:0;
-   padding-bottom:0;
+   padding-bottom:90px;
      //position: absolute;
       width: 100%;
     //  top:-13%;
      // left: 5%;
-     transform: scale(2.4);
+     transform: scale(1.2);
 
    }
    .compas-arrow {
@@ -69,7 +68,7 @@
       width: 90%;
      //position: relative;
       //width: 600px;
-     height: 750px;
+     
     //  overflow:hidden;
       
       
@@ -80,91 +79,37 @@
          width: 100%;
        //  top:-13%;
         // left: 5%;
-        transform: scale(1.9);
+        transform: scale(1.1);
    
       }
    }
 }
-@media (max-width: 700px) {    
+
+
+@media (max-width: 443px) {   
+
   .compas {
 
-    margin-bottom: 0px;
-      
-     display: flex;
-      
-      width: 90%;
-     //position: relative;
-      //width: 600px;
-     height: 500px;
-    //  overflow:hidden;
-      
-      
-      svg {
-         padding-top:1em;
-      padding-bottom:2.3em;
-        //position: absolute;
-         width: 100%;
-       //  top:-13%;
-        // left: 5%;
-        transform: scale(1.9);
-   
-      }
-   }
-}
-
-
-@media (max-width: 551px) {   
-
-   .compas {
-
+    
      
-      
-     display: flex;
-      
-      width: 100%;
-     //position: relative;
-      //width: 600px;
-     height: 420px;
-    //  overflow:hidden;
-      
-      
-      svg {
-         padding-top:1em;
-      padding-bottom:2.3em;
-        //position: absolute;
-         width: 100%;
-       //  top:-13%;
-        // left: 5%;
-        transform: scale(1.9);
-   
-      }
-   }
-}
-
-@media (max-width: 412px) {   
-
-   .compas {
-
+    display: flex;
      
-      
-     display: flex;
-      
-      width: 100%;
-     //position: relative;
-      //width: 600px;
-     height: 380px;
-    //  overflow:hidden;
-      
-      
-      svg {
-        
-        //position: absolute;
-         width: 100%;
-       //  top:-13%;
-        // left: 5%;
-        transform: scale(2.3);
+     width: 100%;
+    //position: relative;
+     //width: 600px;
    
-      }
-   }
+   //  overflow:hidden;
+     
+     
+     svg {
+       
+       //position: absolute;
+        width: 100%;
+      //  top:-13%;
+       // left: 5%;
+       transform: scale(1.1);
+  
+     }
+  }
 }
 
